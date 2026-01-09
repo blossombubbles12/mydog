@@ -3,6 +3,7 @@ import { Sponsors } from "@/components/Sponsors";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { FAQSection } from "@/components/faq/FAQSection";
 import {
   ArrowRight,
   Trophy,
@@ -12,7 +13,8 @@ import {
   Handshake,
   Calendar,
   MessageCircle,
-  Star
+  Star,
+  HelpCircle
 } from "lucide-react";
 
 export default function Home() {
@@ -314,6 +316,33 @@ export default function Home() {
               View Upcoming Events <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>
+        </div>
+      </section>
+
+      {/* FAQ Preview Section */}
+      <section className="py-20 bg-secondary/5">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4">
+              <HelpCircle className="w-4 h-4" /> Got Questions?
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              We've gathered the most common questions from our community to help you get started.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-10">
+            <FAQSection limit={3} />
+          </div>
+
+          <div className="text-center">
+            <Link href="/faq">
+              <Button size="lg" variant="ghost" className="font-bold text-primary hover:text-primary hover:bg-primary/5">
+                View All Questions <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

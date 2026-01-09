@@ -55,6 +55,7 @@ export function Footer() {
                             <li><Link href="/carnival/register" className="hover:text-primary transition-colors">Register for Carnival</Link></li>
                             <li><Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
                             <li><Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link></li>
+                            <li><Link href="/faq" className="hover:text-primary transition-colors">FAQ</Link></li>
                         </ul>
                     </div>
                 </div>
