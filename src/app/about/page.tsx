@@ -316,7 +316,7 @@ export default function AboutPage() {
                                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                                         The mastermind who turned a WhatsApp group into a movement. When she's not
                                         planning world record attempts, she's probably teaching her dogs new tricks
-                                        (or vice versa).
+                                        (or vice versa) or prank calling other people.
                                     </p>
                                     <div className="flex flex-wrap gap-2">
                                         <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
@@ -352,9 +352,9 @@ export default function AboutPage() {
                                     <h3 className="text-2xl font-black mb-1">Gabby Idimogu</h3>
                                     <p className="text-orange-600 font-bold mb-4">Chief Dog Person</p>
                                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                                        Speaks fluent "woof" and has never met a dog she didn't instantly befriend.
+                                        The prank caller extraordinaire. Speaks fluent "woof" and has never met a dog she didn't instantly befriend.
                                         Responsible for making sure every event is 100% tail-wag approved.
-                                        Dogs trust her more than their own owners.
+                                        Dogs trust her more than their own owners. Beware!
                                     </p>
                                     <div className="flex flex-wrap gap-2">
                                         <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-medium">
@@ -388,10 +388,10 @@ export default function AboutPage() {
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-2xl font-black mb-1">Charlie Charlie</h3>
-                                    <p className="text-blue-600 font-bold mb-4">Tech Guy & Dog Lover</p>
+                                    <p className="text-blue-600 font-bold mb-4">Totally Random Guy & Dog Lover</p>
                                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                                        The tech wizard who built the digital infrastructure behind the movement.
-                                        Doesn't speak "woof" but speaks fluent code. Loves dogs, builds platforms,
+                                        The Regular guy who built the digital infrastructure behind the movement.
+                                        Doesn't speak "woof" but speaks less fluent igbo language. Loves dogs, builds platforms,
                                         and makes sure everything runs smoothly behind the scenes.
                                     </p>
                                     <div className="flex flex-wrap gap-2">
