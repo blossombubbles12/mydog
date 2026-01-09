@@ -1,4 +1,33 @@
+import { Metadata } from "next";
 import { Hero } from "@/components/Hero";
+
+export const metadata: Metadata = {
+  title: "Home | My Dog and I - Nigeria's Largest Dog Lovers Community",
+  description: "Join 50,000+ dog lovers in Lagos. Participating in the annual Lagos Dog Carnival, community walks, and our historic Guinness World Record attempt. Be part of the movement!",
+  openGraph: {
+    title: "My Dog and I - Nigeria's Largest Dog Community",
+    description: "Experience the joy of dog ownership with Nigeria's most vibrant community. Lagos Dog Carnival, Events, and more.",
+    url: "https://mydogandni.com", // Assuming the domain
+    siteName: "My Dog and I",
+    images: [
+      {
+        url: "/carnival.png", // Using an existing relevant image
+        width: 1200,
+        height: 630,
+        alt: "Lagos Dog Carnival",
+      },
+    ],
+    locale: "en_NG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "My Dog and I - Nigeria's Largest Dog Community",
+    description: "Join 50,000+ dog lovers for events, the Lagos Dog Carnival, and our Guinness World Record attempt.",
+    images: ["/carnival.png"],
+  },
+};
+
 import { Sponsors } from "@/components/Sponsors";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
