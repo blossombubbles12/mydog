@@ -175,9 +175,9 @@ export default function AboutPage() {
                         </p>
                     </div>
 
-                    <div className="max-w-5xl mx-auto relative">
-                        {/* Vertical Line */}
-                        <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-orange-400 to-yellow-400 hidden md:block" />
+                    <div className="max-w-5xl mx-auto relative px-4">
+                        {/* Vertical Line - Now visible on all screens */}
+                        <div className="absolute left-[2.5rem] md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-orange-400 to-yellow-400 -translate-x-1/2" />
 
                         <div className="space-y-12">
                             {timeline.map((item, index) => (
@@ -190,27 +190,28 @@ export default function AboutPage() {
                                     className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                                         } flex-col gap-8`}
                                 >
-                                    {/* Year Badge */}
-                                    <div className="absolute left-8 md:left-1/2 md:-translate-x-1/2 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-black text-lg shadow-lg z-10 border-4 border-background">
+                                    {/* Year Badge - Centered on line */}
+                                    <div className="absolute left-[2.5rem] md:left-1/2 -translate-x-1/2 w-12 h-12 md:w-16 md:h-16 bg-primary text-white rounded-full flex items-center justify-center font-black text-sm md:text-lg shadow-lg z-10 border-4 border-background">
                                         {item.year.slice(2)}
                                     </div>
 
                                     {/* Content Card */}
-                                    <div className={`w-full md:w-[calc(50%-4rem)] ${index % 2 === 0 ? 'md:pr-16' : 'md:pl-16'} ml-24 md:ml-0`}>
-                                        <div className="bg-card border border-border/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:border-primary/30">
+                                    <div className={`w-full md:w-[calc(50%-4rem)] ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
+                                        } pl-16 md:pl-0`}>
+                                        <div className="bg-card border border-border/50 rounded-2xl p-5 md:p-8 shadow-lg hover:shadow-xl transition-all hover:border-primary/30">
                                             <div className="flex items-start justify-between mb-4">
-                                                <h3 className="text-2xl font-bold">{item.title}</h3>
-                                                <span className="text-4xl font-black text-primary/20">{item.year}</span>
+                                                <h3 className="text-xl md:text-2xl font-bold">{item.title}</h3>
+                                                <span className="text-2xl md:text-4xl font-black text-primary/20">{item.year}</span>
                                             </div>
-                                            <p className="text-muted-foreground mb-4 leading-relaxed">
+                                            <p className="text-sm md:text-base text-muted-foreground mb-4 leading-relaxed">
                                                 {item.description}
                                             </p>
-                                            <div className="flex items-center gap-2 text-sm font-medium text-primary mb-3">
+                                            <div className="flex items-center gap-2 text-xs md:text-sm font-medium text-primary mb-3">
                                                 <TrendingUp className="w-4 h-4" />
                                                 {item.stats}
                                             </div>
-                                            <div className="bg-primary/5 border-l-4 border-primary px-4 py-3 rounded">
-                                                <p className="text-sm font-medium">✨ {item.highlight}</p>
+                                            <div className="bg-primary/5 border-l-4 border-primary px-3 py-2 md:px-4 md:py-3 rounded">
+                                                <p className="text-xs md:text-sm font-medium">✨ {item.highlight}</p>
                                             </div>
                                         </div>
                                     </div>
