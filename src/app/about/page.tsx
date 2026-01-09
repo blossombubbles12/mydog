@@ -9,52 +9,52 @@ import Link from "next/link";
 const timeline = [
     {
         year: "2019",
-        title: "The Beginning",
-        description: "What started as a simple WhatsApp group of 12 passionate dog owners in Lekki became the seed of something extraordinary.",
-        stats: "12 Members • 1 Meetup",
-        highlight: "First community dog walk at Freedom Park"
+        title: "Lagos Dog Carnival 2019",
+        description: "The very first Lagos Dog Carnival. A historic gathering that sparked the movement of dog lovers in Nigeria.",
+        stats: "150 Dogs • First Milestone",
+        highlight: "Launched the Annual Lagos Dog Carnival"
     },
     {
         year: "2020",
-        title: "Growing Roots",
-        description: "Despite pandemic challenges, we organized virtual training sessions and safe outdoor meetups, growing to 500+ members.",
-        stats: "500+ Members • 8 Events",
-        highlight: "Launched online training workshops"
+        title: "Lagos Dog Carnival 2020",
+        description: "Kept the community spirit alive during the global lockdown with our first ever virtual dog show.",
+        stats: "Virtual Edition • Lockdown Spirit",
+        highlight: "Nigeria's First Virtual Dog Show"
     },
     {
         year: "2021",
-        title: "First Carnival",
-        description: "The inaugural Lagos Dog Carnival brought together 800 dogs and their families for a day of joy, competitions, and community.",
-        stats: "800 Dogs • 1,500 Attendees",
-        highlight: "Raised ₦2M for animal shelters"
+        title: "Carnival & Soiree 2021",
+        description: "Returned to the streets and launched the 'My Dog and I Group Soiree', broadening our community experiences.",
+        stats: "500+ Attendees • Two Major Events",
+        highlight: "My Dog and I Group Soiree 2021"
     },
     {
         year: "2022",
-        title: "Expanding Horizons",
-        description: "We doubled in size, introduced breed-specific meetups, and partnered with veterinary clinics across Lagos.",
-        stats: "1,200 Dogs • 3,000 Attendees",
-        highlight: "10+ brand partnerships secured"
+        title: "Lagos Dog Carnival 2022",
+        description: "Introduced the famous runway show and expanded our reach to national television.",
+        stats: "1,200 Dogs • Fashion Focus",
+        highlight: "Launched Doggy Fashion Runway"
     },
     {
         year: "2023",
-        title: "Going National",
-        description: "The carnival attracted visitors from across Nigeria. We launched our mobile app and online community platform.",
-        stats: "1,800 Dogs • 4,500 Attendees",
-        highlight: "Featured on national television"
+        title: "Carnival 2023 & ACMS",
+        description: "A year of advocacy. We marched for the 'Animal Cruelty Must Stop' (ACMS) campaign alongside the carnival.",
+        stats: "United for Welfare • Advocacy",
+        highlight: "Animal Cruelty Must Stop March"
     },
     {
         year: "2024",
-        title: "Breaking Barriers",
-        description: "Became West Africa's largest dog event. Introduced agility competitions and international guest speakers.",
-        stats: "2,500 Dogs • 6,000 Attendees",
-        highlight: "International media coverage"
+        title: "Carnival 2024 & Playground",
+        description: "Introduced the 'Doggie Playground' concept, making our events more interactive than ever before.",
+        stats: "Interactive Zones • Landmark Year",
+        highlight: "Doggie Playground Launch"
     },
     {
         year: "2025",
-        title: "Record-Breaking",
-        description: "Our biggest year yet! Over 3,000 dogs attended, and we announced our Guinness World Record attempt for 2026.",
-        stats: "3,000 Dogs • 8,000 Attendees",
-        highlight: "Guinness World Record bid announced"
+        title: "Lagos Dog Carnival 2025",
+        description: "The biggest prelude to our record attempt. A massive celebration across Victoria Island.",
+        stats: "3,000 Dogs • Record Prep",
+        highlight: "Setting the Stage for Guinness World Record"
     }
 ];
 
@@ -170,8 +170,7 @@ export default function AboutPage() {
                             7 Years of Tail-Wagging Success
                         </h2>
                         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                            From humble beginnings to making history. Here's how we grew from 12 friends
-                            to a 50,000+ strong community.
+                            At My Dog And I Group, we’ve celebrated meaningful milestones through impactful events like the Animal Cruelty Must Stop March and the renowned Lagos Dog Carnival. These events have united animal lovers, raised awareness, and promoted animal welfare. We continue to build on these experiences, with exciting upcoming events. Stay tuned for more as we work to create a stronger community of dog lovers and animal advocates.
                         </p>
                     </div>
 
