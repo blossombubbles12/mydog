@@ -1,0 +1,68 @@
+import Link from "next/link";
+import { Dog, Facebook, Instagram, Twitter } from "lucide-react";
+
+export function Footer() {
+    return (
+        <footer className="bg-secondary/30 border-t border-border/50 py-12">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    {/* About Section - Expanded */}
+                    <div className="space-y-4 md:col-span-2">
+                        <Link href="/" className="flex items-center space-x-2">
+                            <Dog className="h-6 w-6 text-primary" />
+                            <span className="text-lg font-bold">My Dog & I</span>
+                        </Link>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                            My Dog and I is Nigeria's largest dog community platform, connecting passionate pet owners
+                            through events, resources, and shared experiences. From our humble beginnings as a WhatsApp
+                            group in 2019, we've grown into a movement of over 50,000 members dedicated to celebrating
+                            the bond between humans and their canine companions. Join us for the Lagos Dog Carnival,
+                            community walks, training sessions, and more!
+                        </p>
+                        <div className="flex gap-4">
+                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                                <Facebook className="w-5 h-5" />
+                            </a>
+                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                                <Instagram className="w-5 h-5" />
+                            </a>
+                            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                                <Twitter className="w-5 h-5" />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Quick Links - Navigation Menu */}
+                    <div>
+                        <h4 className="font-semibold mb-4">Quick Links</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                            <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
+                            <li><Link href="/carnival" className="hover:text-primary transition-colors">Carnival</Link></li>
+                            <li><Link href="/media" className="hover:text-primary transition-colors">Media</Link></li>
+                            <li><Link href="/about" className="hover:text-primary transition-colors">About</Link></li>
+                            <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+                            <li><Link href="/join" className="hover:text-primary transition-colors">Join the Pack</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Resources */}
+                    <div>
+                        <h4 className="font-semibold mb-4">Resources</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                            <li><Link href="/community" className="hover:text-primary transition-colors">Community</Link></li>
+                            <li><Link href="/sponsorships" className="hover:text-primary transition-colors">Sponsorships</Link></li>
+                            <li><Link href="/events" className="hover:text-primary transition-colors">Events</Link></li>
+                            <li><Link href="/carnival/register" className="hover:text-primary transition-colors">Register for Carnival</Link></li>
+                            <li><Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
+                    <p>© {new Date().getFullYear()} My Dog & I. All rights reserved. Made with ❤️ for dog lovers everywhere.</p>
+                </div>
+            </div>
+        </footer>
+    );
+}

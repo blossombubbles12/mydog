@@ -1,0 +1,351 @@
+import { Hero } from "@/components/Hero";
+import { Sponsors } from "@/components/Sponsors";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
+import {
+  ArrowRight,
+  Trophy,
+  Camera,
+  Users,
+  Heart,
+  Handshake,
+  Calendar,
+  MessageCircle,
+  Star
+} from "lucide-react";
+
+export default function Home() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Hero />
+
+      <Sponsors />
+
+      {/* Lagos Dog Carnival - BOLD REDESIGN */}
+      <section className="py-20 bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30" />
+
+        <div className="container px-4 md:px-6 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider mb-6 shadow-lg">
+                <Trophy className="w-4 h-4" /> Guinness World Record 2026
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
+                Lagos Dog Carnival
+              </h2>
+              <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
+                Join 5,000+ dog lovers for West Africa's biggest dog gathering.
+                Competitions, prizes, fun, and a chance to make history!
+              </p>
+
+              <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
+                  <p className="text-2xl font-bold text-primary">5000+</p>
+                  <p className="text-xs text-muted-foreground">Attendees</p>
+                </div>
+                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
+                  <p className="text-2xl font-bold text-primary">2000+</p>
+                  <p className="text-xs text-muted-foreground">Dogs</p>
+                </div>
+                <div className="text-center p-4 bg-white rounded-xl shadow-sm">
+                  <p className="text-2xl font-bold text-primary">₦5M</p>
+                  <p className="text-xs text-muted-foreground">In Prizes</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/carnival">
+                  <Button size="lg" className="w-full sm:w-auto text-lg px-8 font-bold shadow-lg">
+                    Explore Carnival <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
+                <Link href="/carnival/register">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8 font-bold border-2">
+                    Register Now
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/carnival.png"
+                alt="Lagos Dog Carnival"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <p className="text-2xl font-bold">October 1, 2026</p>
+                <p className="text-white/90">Eko Atlantic, Lagos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Media & Gallery Section */}
+      <section className="py-20 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl order-2 md:order-1">
+              <Image
+                src="/hero.png"
+                alt="Community Moments"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-black/20" />
+            </div>
+
+            <div className="order-1 md:order-2">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold mb-6">
+                <Camera className="w-4 h-4" /> Visual Stories
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
+                Captured Moments
+              </h2>
+              <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
+                Browse our gallery of heartwarming photos from events, meetups, and everyday
+                adventures. Share your own moments and get featured!
+              </p>
+
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                    <Star className="w-4 h-4 text-green-600" />
+                  </div>
+                  <span className="text-muted-foreground">Event photo albums</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                    <Star className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <span className="text-muted-foreground">Community submissions</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Star className="w-4 h-4 text-purple-600" />
+                  </div>
+                  <span className="text-muted-foreground">Lightbox viewer</span>
+                </li>
+              </ul>
+
+              <Link href="/media">
+                <Button size="lg" className="text-lg px-8 font-bold">
+                  View Gallery <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Hub Section */}
+      <section className="py-20 bg-secondary/10">
+        <div className="container px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold mb-6">
+                <MessageCircle className="w-4 h-4" /> The Village Square
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
+                Join 50,000+ Dog Lovers
+              </h2>
+              <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
+                Connect with fellow dog parents, share tips, ask questions, and find your tribe.
+                Our community is here for you 24/7.
+              </p>
+
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <Users className="w-8 h-8 text-primary mb-2" />
+                  <p className="text-2xl font-bold">50k+</p>
+                  <p className="text-sm text-muted-foreground">Members</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <MessageCircle className="w-8 h-8 text-primary mb-2" />
+                  <p className="text-2xl font-bold">120+</p>
+                  <p className="text-sm text-muted-foreground">Daily Topics</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/community">
+                  <Button size="lg" className="w-full sm:w-auto text-lg px-8 font-bold">
+                    Explore Community <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
+                <Link href="/join">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8 font-bold border-2">
+                    Join Free
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-blue-100 to-purple-100 p-8">
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <p className="font-bold mb-1">Health & Nutrition</p>
+                  <p className="text-sm text-muted-foreground">245 discussions</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <p className="font-bold mb-1">Training Tips</p>
+                  <p className="text-sm text-muted-foreground">189 discussions</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <p className="font-bold mb-1">Adoptions</p>
+                  <p className="text-sm text-muted-foreground">67 discussions</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <p className="font-bold mb-1">Lost & Found</p>
+                  <p className="text-sm text-muted-foreground">34 discussions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section className="py-20 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl order-2 md:order-1">
+              <Image
+                src="/event-preview.png"
+                alt="Our Story"
+                fill
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            <div className="order-1 md:order-2">
+              <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-bold mb-6">
+                <Heart className="w-4 h-4" /> Our Story
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
+                From WhatsApp to Movement
+              </h2>
+              <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
+                What started as a small group of friends in 2019 has grown into Nigeria's
+                largest dog community. Learn about our journey, mission, and the amazing team
+                making it all happen.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2" />
+                  <p className="text-muted-foreground">Founded in 2019 with just 12 members</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2" />
+                  <p className="text-muted-foreground">Now 50,000+ strong across Nigeria</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2" />
+                  <p className="text-muted-foreground">Hosted 100+ events and counting</p>
+                </div>
+              </div>
+
+              <Link href="/about">
+                <Button size="lg" className="text-lg px-8 font-bold">
+                  Read Our Story <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsorships Section */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div className="container px-4 md:px-6 text-center">
+          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-bold mb-6">
+            <Handshake className="w-4 h-4" /> Partner with Us
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black mb-6 max-w-3xl mx-auto leading-tight">
+            Reach 50,000+ Passionate Pet Owners
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Become a sponsor and connect your brand with Nigeria's most engaged dog community.
+            Multiple packages available.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <p className="text-3xl font-bold text-primary mb-2">5,000+</p>
+              <p className="text-sm text-muted-foreground">Event Attendees</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <p className="text-3xl font-bold text-primary mb-2">50k+</p>
+              <p className="text-sm text-muted-foreground">Online Community</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <p className="text-3xl font-bold text-primary mb-2">100k+</p>
+              <p className="text-sm text-muted-foreground">Social Reach</p>
+            </div>
+          </div>
+
+          <Link href="/sponsorships">
+            <Button size="lg" className="text-lg px-10 font-bold shadow-lg">
+              View Packages <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Events Calendar Teaser */}
+      <section className="py-20 bg-background">
+        <div className="container px-4 md:px-6 text-center">
+          <Calendar className="w-12 h-12 mx-auto mb-6 text-primary" />
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Never Miss an Event
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            From weekly dog walks to training sessions and the annual carnival -
+            there's always something happening in the pack.
+          </p>
+          <Link href="/community">
+            <Button size="lg" variant="outline" className="text-lg px-8 font-bold border-2">
+              View Upcoming Events <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Final CTA - Join the Pack */}
+      <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+        <div className="container relative z-10 px-4 md:px-6 text-center">
+          <Heart className="w-12 h-12 mx-auto mb-6 text-white/90 animate-pulse" />
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6 text-white">
+            Ready to Join the Woof Pack?
+          </h2>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10 font-medium">
+            Be part of Nigeria's most vibrant dog community. Share adventures, make friends,
+            and give your pup the social life they deserve.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/join">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg px-10 font-bold shadow-lg hover:shadow-xl transition-all">
+                Join for Free
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-10 border-current text-white hover:bg-white/10 hover:text-white border-2 font-bold">
+                Contact Us <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+
+        {/* Decorative circles */}
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
+      </section>
+    </div>
+  );
+}
