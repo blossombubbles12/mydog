@@ -77,7 +77,7 @@ export function Hero() {
             </AnimatePresence>
 
             {/* Content */}
-            <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
+            <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center pt-32 md:pt-20">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={current}
@@ -97,7 +97,7 @@ export function Hero() {
                             </div>
                         </div>
 
-                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-white drop-shadow-2xl leading-[1.1]">
+                        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white drop-shadow-2xl leading-[1.1]">
                             {slides[current].title.split(" ").map((word, i) => (
                                 <span key={i} className={i >= slides[current].title.split(" ").length - 2 ? slides[current].accent : ""}>
                                     {word}{" "}
@@ -109,14 +109,14 @@ export function Hero() {
                             {slides[current].description}
                         </p>
 
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-                            <Link href={slides[current].primaryCTA.url}>
-                                <Button size="lg" className="text-xl px-10 py-8 rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all font-black group">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 w-full sm:w-auto">
+                            <Link href={slides[current].primaryCTA.url} className="w-full sm:w-auto">
+                                <Button size="lg" className="w-full text-lg sm:text-xl px-10 py-6 sm:py-8 rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all font-black group">
                                     {slides[current].primaryCTA.text} <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />
                                 </Button>
                             </Link>
-                            <Link href={slides[current].secondaryCTA.url}>
-                                <Button size="lg" variant="outline" className="text-xl px-10 py-8 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-primary transition-all font-black">
+                            <Link href={slides[current].secondaryCTA.url} className="w-full sm:w-auto">
+                                <Button size="lg" variant="outline" className="w-full text-lg sm:text-xl px-10 py-6 sm:py-8 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-primary transition-all font-black">
                                     {slides[current].secondaryCTA.text}
                                 </Button>
                             </Link>
