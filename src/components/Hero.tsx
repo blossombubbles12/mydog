@@ -77,7 +77,15 @@ export function Hero() {
             </AnimatePresence>
 
             {/* Content */}
-            <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center pt-32 md:pt-20">
+            <motion.div
+                className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center pt-32 md:pt-20 cursor-grab active:cursor-grabbing"
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                onDragEnd={(_, info) => {
+                    if (info.offset.x > 100) prevSlide();
+                    else if (info.offset.x < -100) nextSlide();
+                }}
+            >
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={current}
@@ -123,7 +131,7 @@ export function Hero() {
                         </div>
                     </motion.div>
                 </AnimatePresence>
-            </div>
+            </motion.div>
 
             {/* Navigation Controls */}
             <div className="absolute bottom-10 left-0 right-0 z-20 flex flex-col items-center gap-6">
@@ -142,15 +150,17 @@ export function Hero() {
             {/* Arrows */}
             <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/20 hover:bg-black/40 text-white backdrop-blur-sm transition-all hidden md:block"
+                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-30 p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 transition-all"
+                aria-label="Previous slide"
             >
-                <ChevronLeft className="w-8 h-8" />
+                <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/20 hover:bg-black/40 text-white backdrop-blur-sm transition-all hidden md:block"
+                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-30 p-2 md:p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 transition-all"
+                aria-label="Next slide"
             >
-                <ChevronRight className="w-8 h-8" />
+                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
             </button>
         </section>
     );
