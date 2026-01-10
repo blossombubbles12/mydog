@@ -71,7 +71,8 @@ export function Hero() {
                         className="object-cover brightness-[0.7]"
                         priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                    <div className="absolute inset-0 bg-black/40" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-black/30" />
                 </motion.div>
             </AnimatePresence>
 
