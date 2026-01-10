@@ -2,59 +2,155 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+import { ArrowRight, ChevronLeft, ChevronRight, Trophy, Star, Heart } from "lucide-react";
+
+const slides = [
+    {
+        id: 1,
+        title: "Africa's Largest Pet Gathering",
+        description: "Celebrating 10 years of love, advocacy, and Pet-tastic community building across Nigeria.",
+        image: "/hero.png",
+        primaryCTA: { text: "Find Events", url: "/events" },
+        secondaryCTA: { text: "Join the Pack", url: "/membership" },
+        accent: "text-primary-foreground",
+        icon: Heart
+    },
+    {
+        id: 2,
+        title: "Breaking History in 2026",
+        description: "Be part of our Guinness World Record attempt at Eko Atlantic. October 1st, 2026.",
+        image: "/carnival.png",
+        primaryCTA: { text: "Explore Carnival", url: "/carnival" },
+        secondaryCTA: { text: "Register Now", url: "/carnival/register" },
+        accent: "text-yellow-400",
+        icon: Trophy
+    },
+    {
+        id: 3,
+        title: "The Inner Circle Membership",
+        description: "Unlock premium benefits, official ID cards, and VIP access to Africa's largest pet events.",
+        image: "/event-preview.png",
+        primaryCTA: { text: "View Plans", url: "/membership" },
+        secondaryCTA: { text: "Join Today", url: "/membership" },
+        accent: "text-blue-400",
+        icon: Star
+    }
+];
 
 export function Hero() {
+    const [current, setCurrent] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % slides.length);
+        }, 6000);
+        return () => clearInterval(timer);
+    }, []);
+
+    const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
+    const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+
     return (
-        <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
-            {/* Background Image */}
-            <div className="absolute inset-0 z-0">
-                <Image
-                    src="/hero.png"
-                    alt="Happy golden retriever running in a park"
-                    fill
-                    className="object-cover brightness-[0.85]"
-                    priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-            </div>
+        <section className="relative w-full h-[85vh] md:h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
+            <AnimatePresence mode="wait">
+                <motion.div
+                    key={current}
+                    initial={{ opacity: 0, scale: 1.1 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1.2 }}
+                    className="absolute inset-0 z-0"
+                >
+                    <Image
+                        src={slides[current].image}
+                        alt={slides[current].title}
+                        fill
+                        className="object-cover brightness-[0.7]"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                </motion.div>
+            </AnimatePresence>
 
             {/* Content */}
             <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="max-w-3xl space-y-6"
-                >
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white drop-shadow-md">
-                        Africa's Largest <span className="text-primary-foreground">Pet Gathering</span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto drop-shadow-sm font-medium">
-                        Join Africa's most vibrant community of pet lovers. Discover local events,
-                        meet new friends, and make memories that last a lifetime.
-                    </p>
-
+                <AnimatePresence mode="wait">
                     <motion.div
-                        initial={{ opacity: 0, y: 10 }}
+                        key={current}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                        className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
+                        exit={{ opacity: 0, y: -30 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        className="max-w-4xl space-y-6"
                     >
-                        <Link href="/events">
-                            <Button size="lg" className="text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all">
-                                Find Events
-                            </Button>
-                        </Link>
-                        <Link href="/community">
-                            <Button size="lg" variant="secondary" className="text-lg px-8 py-6 rounded-full shadow-lg backdrop-blur-sm bg-white/90 text-primary hover:bg-white">
-                                Join Community
-                            </Button>
-                        </Link>
+                        <div className="flex justify-center mb-2">
+                            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-white text-sm font-bold uppercase tracking-widest">
+                                {(() => {
+                                    const Icon = slides[current].icon;
+                                    return Icon ? <Icon className="w-4 h-4 text-primary" /> : null;
+                                })()}
+                                {current === 0 ? "10th Anniversary" : current === 1 ? "Making History" : "Elite Status"}
+                            </div>
+                        </div>
+
+                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-white drop-shadow-2xl leading-[1.1]">
+                            {slides[current].title.split(" ").map((word, i) => (
+                                <span key={i} className={i >= slides[current].title.split(" ").length - 2 ? slides[current].accent : ""}>
+                                    {word}{" "}
+                                </span>
+                            ))}
+                        </h1>
+
+                        <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto drop-shadow-sm font-medium leading-relaxed">
+                            {slides[current].description}
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+                            <Link href={slides[current].primaryCTA.url}>
+                                <Button size="lg" className="text-xl px-10 py-8 rounded-2xl shadow-2xl hover:shadow-primary/20 transition-all font-black group">
+                                    {slides[current].primaryCTA.text} <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                                </Button>
+                            </Link>
+                            <Link href={slides[current].secondaryCTA.url}>
+                                <Button size="lg" variant="outline" className="text-xl px-10 py-8 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-primary transition-all font-black">
+                                    {slides[current].secondaryCTA.text}
+                                </Button>
+                            </Link>
+                        </div>
                     </motion.div>
-                </motion.div>
+                </AnimatePresence>
             </div>
+
+            {/* Navigation Controls */}
+            <div className="absolute bottom-10 left-0 right-0 z-20 flex flex-col items-center gap-6">
+                <div className="flex items-center gap-4">
+                    {slides.map((_, i) => (
+                        <button
+                            key={i}
+                            onClick={() => setCurrent(i)}
+                            className={`h-2 transition-all duration-300 rounded-full ${current === i ? "w-12 bg-primary shadow-[0_0_15px_rgba(255,107,0,0.5)]" : "w-2 bg-white/40 hover:bg-white/60"
+                                }`}
+                        />
+                    ))}
+                </div>
+            </div>
+
+            {/* Arrows */}
+            <button
+                onClick={prevSlide}
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/20 hover:bg-black/40 text-white backdrop-blur-sm transition-all hidden md:block"
+            >
+                <ChevronLeft className="w-8 h-8" />
+            </button>
+            <button
+                onClick={nextSlide}
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/20 hover:bg-black/40 text-white backdrop-blur-sm transition-all hidden md:block"
+            >
+                <ChevronRight className="w-8 h-8" />
+            </button>
         </section>
     );
 }
