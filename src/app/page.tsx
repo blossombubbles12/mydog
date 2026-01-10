@@ -211,9 +211,9 @@ export default function Home() {
                     Explore Community <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
-                <Link href="/join">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8 font-bold border-2">
-                    Join Free
+                <Link href="/membership">
+                  <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg px-10 font-bold shadow-xl">
+                    Join the Pack Today
                   </Button>
                 </Link>
               </div>
@@ -391,9 +391,9 @@ export default function Home() {
             and give your pup the social life they deserve.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/join">
+            <Link href="/membership">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg px-10 font-bold shadow-lg hover:shadow-xl transition-all">
-                Join for Free
+                Join the Pack Today
               </Button>
             </Link>
             <Link href="/contact">

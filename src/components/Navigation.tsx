@@ -15,7 +15,6 @@ const navItems = [
     { name: "Carnival", href: "/carnival" },
     { name: "Media", href: "/media" },
     { name: "Events", href: "/events" },
-    { name: "Community", href: "/community" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
 ];
@@ -65,7 +64,7 @@ export function Navigation() {
                             )}
                         </Link>
                     ))}
-                    <Link href="/join">
+                    <Link href="/membership">
                         <Button variant="default" size="sm" className="ml-4">
                             Join the Pack
                         </Button>
@@ -105,9 +104,11 @@ export function Navigation() {
                                     {item.name}
                                 </Link>
                             ))}
-                            <Button className="w-full mt-4" size="lg">
-                                Join the Pack
-                            </Button>
+                            <Link href="/membership" onClick={() => setIsOpen(false)}>
+                                <Button className="w-full mt-4" size="lg">
+                                    Join the Pack
+                                </Button>
+                            </Link>
                         </div>
                     </motion.div>
                 )}

@@ -464,7 +464,7 @@ export default function AboutPage() {
                     <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
                         Join 50,000+ pet lovers who are already part of this incredible journey.
                     </p>
-                    <Link href="/join">
+                    <Link href="/membership">
                         <Button size="lg" variant="secondary" className="text-lg px-10 font-bold shadow-xl">
                             Join the Pack Today
                         </Button>
