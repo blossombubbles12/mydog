@@ -9,7 +9,8 @@ import { SafetyInfo } from "@/components/SafetyInfo";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, Users, Sparkles } from "lucide-react";
+import { AnniversaryBanner } from "@/components/AnniversaryBanner";
 
 export default function CarnivalPage() {
     return (
@@ -49,12 +50,14 @@ export default function CarnivalPage() {
 
                         <Link href="/carnival/register">
                             <Button size="lg" className="text-xl px-10 py-6 rounded-full bg-yellow-500 text-black hover:bg-yellow-400 border-none shadow-xl cursor-pointer">
-                                Register for World Record
+                                Register for Africa's Largest Pet Gathering
                             </Button>
                         </Link>
                     </motion.div>
                 </div>
             </section>
+
+            <AnniversaryBanner />
 
             {/* World Record Component */}
             <WorldRecord />
@@ -67,6 +70,73 @@ export default function CarnivalPage() {
 
             {/* Timeline Component */}
             <CarnivalTimeline />
+
+            {/* Organizers Section */}
+            <section className="py-24 bg-gradient-to-br from-orange-50 to-yellow-50 relative overflow-hidden">
+                <div className="container px-4 relative z-10">
+                    <div className="text-center mb-16">
+                        <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4">
+                            <Users className="w-4 h-4" /> The Visionaries
+                        </div>
+                        <h2 className="text-4xl md:text-5xl font-black mb-4">The Minds Behind the Magic</h2>
+                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                            The team dedicated to making the Lagos Dog Carnival the most unforgettable experience for you and your pets.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                        {/* Jacklyn */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="bg-white rounded-3xl p-8 shadow-xl border border-primary/10 hover:shadow-2xl transition-all group"
+                        >
+                            <div className="relative w-32 h-32 mx-auto mb-6">
+                                <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl group-hover:bg-primary/30 transition-all" />
+                                <div className="relative w-full h-full bg-primary text-white rounded-full flex items-center justify-center text-4xl font-black z-10">
+                                    JI
+                                </div>
+                                <div className="absolute -top-2 -right-2 bg-yellow-400 text-black p-2 rounded-full shadow-lg z-20">
+                                    <Sparkles className="w-4 h-4" />
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <h3 className="text-2xl font-black mb-2">Jacklyn Idimogu</h3>
+                                <p className="text-primary font-bold mb-4 uppercase tracking-wider text-sm">Chief Convener / Creator</p>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    The architectural mind behind the Carnival. She breathes life into every detail, from the grand parade to the historical record attempts, ensuring the Lagos Dog Carnival stays the gold standard of pet events in Africa.
+                                </p>
+                            </div>
+                        </motion.div>
+
+                        {/* Gabby */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="bg-white rounded-3xl p-8 shadow-xl border border-orange-200 hover:shadow-2xl transition-all group"
+                        >
+                            <div className="relative w-32 h-32 mx-auto mb-6">
+                                <div className="absolute inset-0 bg-orange-200 rounded-full blur-2xl group-hover:bg-orange-300 transition-all" />
+                                <div className="relative w-full h-full bg-orange-500 text-white rounded-full flex items-center justify-center text-4xl font-black z-10">
+                                    GI
+                                </div>
+                                <div className="absolute -top-2 -right-2 bg-orange-400 text-white p-2 rounded-full shadow-lg z-20">
+                                    <Sparkles className="w-4 h-4" />
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <h3 className="text-2xl font-black mb-2">Gabby Idimogu</h3>
+                                <p className="text-orange-600 font-bold mb-4 uppercase tracking-wider text-sm">Convener</p>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Our resident "Animal Whisperer" and master of fun. Gabby is responsible for the chaos, the play, and the magic. If you see a dog wearing a tuxedo or a cat judging a competition, that's likely her doing. She ensures 100% tail-wagging satisfaction!
+                                </p>
+                            </div>
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
 
             {/* Safety Info */}
             <SafetyInfo />

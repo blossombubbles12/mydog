@@ -67,7 +67,7 @@ export default function SponsorshipsPage() {
                             Partner with the Pack
                         </h1>
                         <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-                            Join Nigeria's largest dog community event and connect with 50,000+ passionate pet owners.
+                            Join Africa's largest gathering of Pets and connect with 50,000+ passionate pet owners.
                         </p>
                         <div className="flex flex-wrap justify-center gap-8 text-left">
                             <div className="bg-white p-4 rounded-xl shadow-sm">
@@ -137,7 +137,7 @@ export default function SponsorshipsPage() {
                         <div className="bg-background p-6 rounded-xl">
                             <h3 className="text-xl font-bold mb-3">🎯 Targeted Audience</h3>
                             <p className="text-muted-foreground">
-                                Reach affluent pet owners who spend an average of ₦50,000/month on their dogs.
+                                Reach affluent pet owners who spend an average of ₦50,000/month on their beloved pets.
                             </p>
                         </div>
                         <div className="bg-background p-6 rounded-xl">

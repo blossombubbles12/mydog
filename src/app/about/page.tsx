@@ -5,21 +5,29 @@ import Image from "next/image";
 import { Heart, Users, Trophy, Target, Eye, Sparkles, Calendar, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { AnniversaryBanner } from "@/components/AnniversaryBanner";
 
 const timeline = [
     {
+        year: "2016",
+        title: "Where It All Began",
+        description: "The journey started on Instagram, marking the birth of a movement dedicated to pet owners and lovers across Nigeria. Registered membership is now available for doglovers across our social platforms.",
+        stats: "Instagram Launch • The Foundation",
+        highlight: "Started on Instagram in 2016"
+    },
+    {
         year: "2019",
         title: "Lagos Dog Carnival 2019",
-        description: "The very first Lagos Dog Carnival. A historic gathering that sparked the movement of dog lovers in Nigeria.",
-        stats: "150 Dogs • First Milestone",
+        description: "The very first Lagos Dog Carnival. A historic gathering that sparked the movement of pet lovers in Nigeria.",
+        stats: "150 Dogs • First Carnival",
         highlight: "Launched the Annual Lagos Dog Carnival"
     },
     {
         year: "2020",
         title: "Lagos Dog Carnival 2020",
-        description: "Kept the community spirit alive during the global lockdown with our first ever virtual dog show.",
-        stats: "Virtual Edition • Lockdown Spirit",
-        highlight: "Nigeria's First Virtual Dog Show"
+        description: "Maintained our consistency despite global challenges, celebrating with a unique theme that united our growing community.",
+        stats: "Consistent Growth • Unique Theme",
+        highlight: "LDC Annual Consistency"
     },
     {
         year: "2021",
@@ -110,13 +118,14 @@ export default function AboutPage() {
                             <span className="text-primary">We're a Movement.</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                            From a small WhatsApp group to Nigeria's largest dog community,
-                            we've spent 7 years building connections, creating memories, and
-                            celebrating the unconditional love between humans and their dogs.
+                            <strong>My Dog and I Group</strong> is a non-profit pet service company actively building a pet-loving community in Nigeria through social work, activism, and animal-related events.
+                            Starting on Instagram in 2016, we've grown into <strong>Africa's largest gathering of Pets</strong>, building connections and celebrating the unconditional love between humans and their animal companions across several platforms.
                         </p>
                     </motion.div>
                 </div>
             </section>
+
+            <AnniversaryBanner />
 
             {/* Mission & Vision */}
             <section className="py-20 bg-secondary/5">
@@ -133,8 +142,8 @@ export default function AboutPage() {
                             </div>
                             <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                To create Africa's most vibrant, inclusive, and supportive community for dog lovers,
-                                where every tail wag is celebrated, every bond is strengthened, and every member feels
+                                To create Africa's most vibrant, inclusive, and supportive community for pet lovers,
+                                where every connection is celebrated, every bond is strengthened, and every member feels
                                 they belong to something bigger than themselves.
                             </p>
                         </motion.div>
@@ -150,9 +159,9 @@ export default function AboutPage() {
                             </div>
                             <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                To be recognized globally as the pioneering force that transformed dog ownership culture
+                                To be recognized globally as the pioneering force that transformed pet ownership culture
                                 in Africa, setting world records, creating lasting impact, and inspiring communities
-                                across the continent to celebrate their four-legged family members.
+                                across the continent to celebrate their beloved animal family members.
                             </p>
                         </motion.div>
                     </div>
@@ -170,7 +179,7 @@ export default function AboutPage() {
                             7 Years of Tail-Wagging Success
                         </h2>
                         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                            At My Dog And I Group, we’ve celebrated meaningful milestones through impactful events like the Animal Cruelty Must Stop March and the renowned Lagos Dog Carnival. These events have united animal lovers, raised awareness, and promoted animal welfare. We continue to build on these experiences, with exciting upcoming events. Stay tuned for more as we work to create a stronger community of dog lovers and animal advocates.
+                            At My Dog And I Group, we’ve celebrated meaningful milestones through impactful events like the Animal Cruelty Must Stop March and the renowned Lagos Dog Carnival. These events have united animal lovers, raised awareness, and promoted animal welfare. We continue to build on these experiences, with exciting upcoming events that bring together the <strong>largest gathering of Pets in Africa</strong>.
                         </p>
                     </div>
 
@@ -241,8 +250,8 @@ export default function AboutPage() {
                         </h2>
                         <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                             This isn't just another carnival. On October 1st, 2026, we're attempting to gather
-                            the <strong>largest assembly of dog lovers in Africa</strong> at Eko Atlantic.
-                            This is our moment to show the world what Nigerian dog lovers can achieve together.
+                            the <strong>Africa's largest gathering of Pets</strong> at Eko Atlantic.
+                            This is our moment to show the world what African pet lovers can achieve together.
                         </p>
 
                         <div className="grid md:grid-cols-3 gap-6 mb-10">
@@ -253,6 +262,10 @@ export default function AboutPage() {
                             <div className="bg-white p-6 rounded-2xl shadow-lg">
                                 <p className="text-4xl font-black text-primary mb-2">2,000+</p>
                                 <p className="text-sm font-medium text-muted-foreground">Dogs Expected</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-primary">
+                                <p className="text-4xl font-black text-primary mb-2">2,000+</p>
+                                <p className="text-sm font-medium text-muted-foreground">Pets Rehomed<br />(Including Cats & Rabbits)</p>
                             </div>
                             <div className="bg-white p-6 rounded-2xl shadow-lg">
                                 <p className="text-4xl font-black text-primary mb-2">1st</p>
@@ -307,16 +320,14 @@ export default function AboutPage() {
                                         JI
                                     </div>
                                     <div className="absolute top-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-bold">
-                                        👑 FOUNDER
+                                        👑 PRESIDENT
                                     </div>
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-2xl font-black mb-1">Jacklyn Idimogu</h3>
-                                    <p className="text-primary font-bold mb-4">CEO & Visionary</p>
+                                    <p className="text-primary font-bold mb-4">President, My Dog and I Group</p>
                                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                                        The mastermind who turned a WhatsApp group into a movement. When she's not
-                                        planning world record attempts, she's probably teaching her dogs new tricks
-                                        (or vice versa) or prank calling other people.
+                                        The visionary leader who transformed a passion for pets into Nigeria's largest movement. As President, she drives the strategic direction and advocacy efforts of the group.
                                     </p>
                                     <div className="flex flex-wrap gap-2">
                                         <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
@@ -345,16 +356,14 @@ export default function AboutPage() {
                                         GI
                                     </div>
                                     <div className="absolute top-4 right-4 bg-orange-400 text-white px-3 py-1 rounded-full text-xs font-bold">
-                                        🐕 DOG WHISPERER
+                                        ⭐ VICE PRESIDENT
                                     </div>
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-2xl font-black mb-1">Gabby Idimogu</h3>
-                                    <p className="text-orange-600 font-bold mb-4">Chief Dog Person</p>
+                                    <p className="text-orange-600 font-bold mb-4">Vice President</p>
                                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                                        The prank caller extraordinaire. Speaks fluent "woof" and has never met a dog she didn't instantly befriend.
-                                        Responsible for making sure every event is 100% tail-wag approved.
-                                        Dogs trust her more than their own owners. Beware!
+                                        Co-leader of the movement with a deep expertise in animal behavior and community engagement. Ensures every event reflects our core values of pet welfare and member joy.
                                     </p>
                                     <div className="flex flex-wrap gap-2">
                                         <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-medium">
@@ -453,7 +462,7 @@ export default function AboutPage() {
                         Ready to Be Part of Our Story?
                     </h2>
                     <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-                        Join 50,000+ dog lovers who are already part of this incredible journey.
+                        Join 50,000+ pet lovers who are already part of this incredible journey.
                     </p>
                     <Link href="/join">
                         <Button size="lg" variant="secondary" className="text-lg px-10 font-bold shadow-xl">

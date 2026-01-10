@@ -6,6 +6,12 @@ import Image from "next/image";
 
 const history = [
     {
+        year: "2016",
+        title: "Where It All Began",
+        description: "The journey started on Instagram, marking the birth of a movement dedicated to pet owners and lovers across Nigeria.",
+        icon: Star,
+    },
+    {
         year: "2019",
         title: "Lagos Dog Carnival 2019",
         description: "The very first Lagos Dog Carnival. 150 dogs and their owners gathered at Freedom Park.",
@@ -14,7 +20,7 @@ const history = [
     {
         year: "2020",
         title: "Lagos Dog Carnival 2020",
-        description: "Kept the spirit alive with Nigeria's first virtual dog show during the lockdown.",
+        description: "Maintained consistency with a unique theme that brought hope and joy during challenging times.",
         icon: Calendar,
     },
     {
@@ -56,7 +62,7 @@ export function CarnivalTimeline() {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Our Journey So Far</h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        From a small gathering of friends to the biggest dog event in West Africa.
+                        From a small gathering of friends to Africa's largest gathering of Pets.
                     </p>
                 </div>
 

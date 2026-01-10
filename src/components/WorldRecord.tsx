@@ -50,7 +50,7 @@ export function WorldRecord() {
                 </motion.h2>
 
                 <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto">
-                    Join us as we attempt the record for the <strong className="text-white border-b-2 border-yellow-400">Largest Dog Gathering</strong> in Lagos, Nigeria.
+                    Join us as we attempt the record for the <strong className="text-white border-b-2 border-yellow-400">Africa's Largest Gathering of Pets</strong> in Lagos, Nigeria.
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">

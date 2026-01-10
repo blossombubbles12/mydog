@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 
 export const metadata: Metadata = {
-  title: "Home | My Dog and I - Nigeria's Largest Dog Lovers Community",
-  description: "Join 50,000+ dog lovers in Lagos. Participating in the annual Lagos Dog Carnival, community walks, and our historic Guinness World Record attempt. Be part of the movement!",
+  title: "Home | My Dog and I - Africa's Largest Gathering of Pets",
+  description: "Join 50,000+ pet lovers in Lagos. Participating in the annual Lagos Dog Carnival, community walks, and our historic Guinness World Record attempt for Africa's largest gathering of Pets.",
   openGraph: {
-    title: "My Dog and I - Nigeria's Largest Dog Community",
-    description: "Experience the joy of dog ownership with Nigeria's most vibrant community. Lagos Dog Carnival, Events, and more.",
+    title: "My Dog and I - Africa's Largest Gathering of Pets",
+    description: "Experience the joy of pet ownership with Africa's largest gathering of Pets. Lagos Dog Carnival, Events, and more.",
     url: "https://mydogandni.com", // Assuming the domain
     siteName: "My Dog and I",
     images: [
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "My Dog and I - Nigeria's Largest Dog Community",
-    description: "Join 50,000+ dog lovers for events, the Lagos Dog Carnival, and our Guinness World Record attempt.",
+    title: "My Dog and I - Africa's Largest Gathering of Pets",
+    description: "Join 50,000+ pet lovers for events, the Lagos Dog Carnival, and our Guinness World Record attempt.",
     images: ["/carnival.png"],
   },
 };
@@ -32,6 +32,7 @@ import { Sponsors } from "@/components/Sponsors";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { AnniversaryBanner } from "@/components/AnniversaryBanner";
 import { FAQSection } from "@/components/faq/FAQSection";
 import {
   ArrowRight,
@@ -52,6 +53,7 @@ export default function Home() {
       <Hero />
 
       <Sponsors />
+      <AnniversaryBanner />
 
       {/* Lagos Dog Carnival - BOLD REDESIGN */}
       <section className="py-20 bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 relative overflow-hidden">
@@ -67,7 +69,7 @@ export default function Home() {
                 Lagos Dog Carnival
               </h2>
               <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-                Join 5,000+ dog lovers for West Africa's biggest dog gathering.
+                Join 5,000+ pet lovers for <strong>Africa's largest gathering of Pets</strong>.
                 Competitions, prizes, fun, and a chance to make history!
               </p>
 
@@ -183,7 +185,7 @@ export default function Home() {
                 <MessageCircle className="w-4 h-4" /> The Village Square
               </div>
               <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                Join 50,000+ Dog Lovers
+                Join 50,000+ Pet Lovers
               </h2>
               <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
                 Connect with fellow dog parents, share tips, ask questions, and find your tribe.
@@ -259,22 +261,24 @@ export default function Home() {
                 <Heart className="w-4 h-4" /> Our Story
               </div>
               <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                From WhatsApp to Movement
+                From Instagram to Movement
               </h2>
               <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-                What started as a small group of friends in 2019 has grown into Nigeria's
-                largest dog community. Learn about our journey, mission, and the amazing team
-                making it all happen.
+                <strong>My Dog and I Group</strong> is a non-profit pet service company that started on Instagram in 2016. Today, it has grown into Africa's largest gathering of Pets, building a vibrant community through social work, activism, and events.
               </p>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2" />
-                  <p className="text-muted-foreground">Founded in 2019 with just 12 members</p>
+                  <p className="text-muted-foreground">Started on Instagram in 2016</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2" />
-                  <p className="text-muted-foreground">Now 50,000+ strong across Nigeria</p>
+                  <p className="text-muted-foreground">Now 50,000+ strong across several platforms</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2" />
+                  <p className="text-muted-foreground">Rehomed 2,000+ pets (including cats)</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2" />
@@ -302,7 +306,7 @@ export default function Home() {
             Reach 50,000+ Passionate Pet Owners
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Become a sponsor and connect your brand with Nigeria's most engaged dog community.
+            Become a sponsor and connect your brand with Nigeria's most engaged pet community.
             Multiple packages available.
           </p>
 
@@ -383,7 +387,7 @@ export default function Home() {
             Ready to Join the Woof Pack?
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10 font-medium">
-            Be part of Nigeria's most vibrant dog community. Share adventures, make friends,
+            Be part of Nigeria's most vibrant pet community. Share adventures, make friends,
             and give your pup the social life they deserve.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

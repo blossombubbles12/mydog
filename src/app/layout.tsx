@@ -12,11 +12,11 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "My Dog and I | Nigeria's Largest Dog Lovers Community",
+    default: "My Dog and I | Africa's Largest Gathering of Pets",
     template: "%s | My Dog and I"
   },
-  description: "Experience the joy of dog ownership with Nigeria's most vibrant community. Join 50,000+ dog lovers for events, the Lagos Dog Carnival, and our Guinness World Record attempt.",
-  keywords: ["Dog community Lagos", "Lagos Dog Carnival", "Dog events Nigeria", "Pet owners Nigeria", "Dog lovers Lagos", "Guinness World Record dog gathering", "My Dog and I"],
+  description: "Experience the joy of pet ownership with Africa's largest gathering of Pets. Join 50,000+ pet lovers for events, the Lagos Dog Carnival, and our Guinness World Record attempt.",
+  keywords: ["Pet community Lagos", "Africa's largest gathering of pets", "Lagos Dog Carnival", "Pet events Nigeria", "Pet owners Nigeria", "Pet lovers Lagos", "Guinness World Record pet gathering", "My Dog and I"],
   authors: [{ name: "My Dog and I Team" }],
   creator: "My Dog and I",
   publisher: "My Dog and I",

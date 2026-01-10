@@ -20,7 +20,7 @@ const events = [
         attendees: 5000,
         image: "/carnival.png",
         featured: true,
-        description: "The biggest dog gathering in West African history. Guinness World Record attempt!",
+        description: "Africa's largest gathering of Pets. Guinness World Record attempt!",
         price: "Free"
     },
     {
@@ -32,7 +32,7 @@ const events = [
         category: "walk",
         attendees: 45,
         image: "/hero.png",
-        description: "Join fellow dog parents for a relaxing morning walk and socialization.",
+        description: "Join fellow pet parents for a relaxing morning walk and socialization.",
         price: "Free"
     },
     {
@@ -119,7 +119,7 @@ export default function EventsPage() {
                             Upcoming Events
                         </h1>
                         <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-                            From casual walks to major competitions - find the perfect event for you and your pup.
+                            From casual walks to major competitions - find the perfect event for you and your pet.
                         </p>
                     </motion.div>
                 </div>
@@ -148,8 +148,8 @@ export default function EventsPage() {
                                     key={cat.value}
                                     onClick={() => setSelectedCategory(cat.value)}
                                     className={`px-4 py-2 rounded-full whitespace-nowrap font-medium transition-all ${selectedCategory === cat.value
-                                            ? "bg-primary text-white"
-                                            : "bg-secondary/30 hover:bg-secondary/50"
+                                        ? "bg-primary text-white"
+                                        : "bg-secondary/30 hover:bg-secondary/50"
                                         }`}
                                 >
                                     {cat.label}
@@ -241,7 +241,7 @@ export default function EventsPage() {
                 <div className="container px-4 text-center">
                     <h2 className="text-3xl font-bold mb-4">Want to Host an Event?</h2>
                     <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                        Have an idea for a dog event? We'd love to help you organize it and connect you with our community.
+                        Have an idea for a pet event? We'd love to help you organize it and connect you with our community.
                     </p>
                     <Link href="/contact">
                         <Button size="lg" className="px-10">

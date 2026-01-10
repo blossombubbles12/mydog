@@ -29,10 +29,10 @@ export function Hero() {
                     className="max-w-3xl space-y-6"
                 >
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white drop-shadow-md">
-                        Where Every Dog Finds <span className="text-primary-foreground">Their Pack</span>
+                        Africa's Largest <span className="text-primary-foreground">Pet Gathering</span>
                     </h1>
                     <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto drop-shadow-sm font-medium">
-                        Join the most vibrant community of dog lovers. Discover local events,
+                        Join Africa's most vibrant community of pet lovers. Discover local events,
                         meet new friends, and make memories that last a lifetime.
                     </p>
 

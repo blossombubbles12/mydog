@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, Dog, Store, Trophy } from "lucide-react";
+import { Users, Dog, Store, Heart } from "lucide-react";
 
 const stats = [
     { label: "Attendees", value: "5,000+", icon: Users, color: "text-blue-500" },
-    { label: "Dogs Participating", value: "2,500+", icon: Dog, color: "text-orange-500" },
+    { label: "Pets Participating", value: "2,500+", icon: Dog, color: "text-orange-500" },
     { label: "Vendors", value: "80+", icon: Store, color: "text-green-500" },
-    { label: "Awards Categories", value: "15", icon: Trophy, color: "text-yellow-500" },
+    { label: "Pets Rehomed", value: "2,000+", icon: Heart, color: "text-red-500" },
 ];
 
 export function CarnivalStats() {

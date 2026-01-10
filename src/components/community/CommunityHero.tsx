@@ -30,7 +30,7 @@ export function CommunityHero() {
                         Where the Pack Comes Together
                     </h1>
                     <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-                        Connect with thousands of dog lovers, share advice, and make lifelong friends.
+                        Connect with thousands of pet lovers, share advice, and make lifelong friends.
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16">
