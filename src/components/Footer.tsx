@@ -13,11 +13,10 @@ export function Footer() {
                             <span className="text-lg font-bold">My Dog & I</span>
                         </Link>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                            My Dog and I is Nigeria's largest dog community platform, connecting passionate pet owners
-                            through events, resources, and shared experiences. From our humble beginnings as a WhatsApp
-                            group in 2019, we've grown into a movement of over 50,000 members dedicated to celebrating
-                            the bond between humans and their canine companions. Join us for the Lagos Dog Carnival,
-                            community walks, training sessions, and more!
+                            My Dog and I Group is a non-profit pet service company actively building a pet-loving community
+                            in Nigeria through social work, activism, and animal-related events. Starting on Instagram
+                            in 2016, we've grown into Africa's largest gathering of Pets with over 50,000 members.
+                            Join us for the Lagos Dog Carnival, community walks, and more!
                         </p>
                         <div className="flex gap-4">
                             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -38,6 +37,7 @@ export function Footer() {
                         <ul className="space-y-2 text-sm text-muted-foreground">
                             <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
                             <li><Link href="/carnival" className="hover:text-primary transition-colors">Carnival</Link></li>
+                            <li><Link href="/membership" className="hover:text-primary transition-colors">Membership</Link></li>
                             <li><Link href="/media" className="hover:text-primary transition-colors">Media</Link></li>
                             <li><Link href="/about" className="hover:text-primary transition-colors">About</Link></li>
                             <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
@@ -61,7 +61,7 @@ export function Footer() {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-                    <p>© {new Date().getFullYear()} My Dog & I. All rights reserved. Made with ❤️ for dog lovers everywhere.</p>
+                    <p>© {new Date().getFullYear()} My Dog & I. All rights reserved. Celebrating 10 years of impact for pet lovers everywhere.</p>
                 </div>
             </div>
         </footer>
