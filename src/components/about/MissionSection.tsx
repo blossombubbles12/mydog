@@ -29,7 +29,7 @@ export function MissionSection() {
 
                         <div className="space-y-6">
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center shrink-0">
+                                <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
                                     <Heart className="w-6 h-6 text-orange-600" />
                                 </div>
                                 <div>
@@ -38,7 +38,7 @@ export function MissionSection() {
                                 </div>
                             </div>
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shrink-0">
+                                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                                     <Globe className="w-6 h-6 text-blue-600" />
                                 </div>
                                 <div>

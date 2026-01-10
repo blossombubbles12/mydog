@@ -15,7 +15,7 @@ const Card = React.forwardRef<
         whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         className={cn(
-            "rounded-lg border bg-card text-card-foreground shadow-sm bg-white dark:bg-zinc-900 border-border/50",
+            "rounded-lg border bg-card text-card-foreground shadow-sm bg-white border-border/50",
             className
         )}
         {...props}

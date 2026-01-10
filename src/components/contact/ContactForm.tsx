@@ -21,7 +21,7 @@ export function ContactForm() {
     };
 
     return (
-        <div className="bg-white dark:bg-zinc-900 p-8 rounded-3xl shadow-lg border border-border/50">
+        <div className="bg-white p-8 rounded-3xl shadow-lg border border-border/50">
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">

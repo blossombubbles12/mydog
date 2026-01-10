@@ -12,7 +12,7 @@ export function MediaSubmission() {
                     initial={{ scale: 0.9, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
-                    className="bg-white dark:bg-zinc-900 rounded-3xl p-10 md:p-16 shadow-xl border border-border/50 relative overflow-hidden"
+                    className="bg-white rounded-3xl p-10 md:p-16 shadow-xl border border-border/50 relative overflow-hidden"
                 >
                     {/* Decorative Elements */}
                     <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />

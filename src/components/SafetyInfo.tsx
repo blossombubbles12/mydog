@@ -6,7 +6,7 @@ export function SafetyInfo() {
     return (
         <section className="py-20 bg-background">
             <div className="container px-4 md:px-6">
-                <div className="bg-orange-50 dark:bg-orange-950/20 border border-orange-200 dark:border-orange-800 rounded-3xl p-8 md:p-12">
+                <div className="bg-orange-50 border border-orange-200 rounded-3xl p-8 md:p-12">
                     <div className="max-w-3xl mx-auto text-center mb-10">
                         <h2 className="text-3xl font-bold mb-4 flex items-center justify-center gap-2">
                             <ShieldCheck className="w-8 h-8 text-orange-600" />

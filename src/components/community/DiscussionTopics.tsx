@@ -5,12 +5,12 @@ import { Stethoscope, GraduationCap, HeartHandshake, Bone, Scissors, HelpCircle 
 import { Card } from "@/components/ui/card";
 
 const topics = [
-    { label: "Health & Nutrition", icon: Stethoscope, color: "text-red-500", bg: "bg-red-50 dark:bg-red-900/20" },
-    { label: "Training Tips", icon: GraduationCap, color: "text-blue-500", bg: "bg-blue-50 dark:bg-blue-900/20" },
-    { label: "Adoptions", icon: HeartHandshake, color: "text-pink-500", bg: "bg-pink-50 dark:bg-pink-900/20" },
-    { label: "Food & Treats", icon: Bone, color: "text-orange-500", bg: "bg-orange-50 dark:bg-orange-900/20" },
-    { label: "Grooming", icon: Scissors, color: "text-purple-500", bg: "bg-purple-50 dark:bg-purple-900/20" },
-    { label: "Lost & Found", icon: HelpCircle, color: "text-yellow-500", bg: "bg-yellow-50 dark:bg-yellow-900/20" },
+    { label: "Health & Nutrition", icon: Stethoscope, color: "text-red-500", bg: "bg-red-50" },
+    { label: "Training Tips", icon: GraduationCap, color: "text-blue-500", bg: "bg-blue-50" },
+    { label: "Adoptions", icon: HeartHandshake, color: "text-pink-500", bg: "bg-pink-50" },
+    { label: "Food & Treats", icon: Bone, color: "text-orange-500", bg: "bg-orange-50" },
+    { label: "Grooming", icon: Scissors, color: "text-purple-500", bg: "bg-purple-50" },
+    { label: "Lost & Found", icon: HelpCircle, color: "text-yellow-500", bg: "bg-yellow-50" },
 ];
 
 export function DiscussionTopics() {

@@ -25,7 +25,7 @@ export default function RegistrationWizard() {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-yellow-50 py-20 px-4">
-            <div className="w-full max-w-2xl bg-white dark:bg-zinc-900 rounded-3xl shadow-2xl border border-border/40 overflow-hidden relative">
+            <div className="w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-border/40 overflow-hidden relative">
 
                 {/* Progress Bar */}
                 <div className="h-2 bg-secondary/30 w-full">
