@@ -223,10 +223,8 @@ export default function EventsPage() {
                                             </div>
                                         </div>
 
-                                        <Link href={event.id === 1 ? "/carnival/register" : "/join"}>
-                                            <Button className="w-full">
-                                                {event.id === 1 ? "Register Now" : "RSVP"} <ArrowRight className="ml-2 w-4 h-4" />
-                                            </Button>
+                                        <Link href={event.id === 1 ? "/carnival/register" : "/membership"}>
+                                            <Button className="w-full">Get Tickets</Button>
                                         </Link>
                                     </div>
                                 </Card>

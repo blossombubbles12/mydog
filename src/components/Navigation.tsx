@@ -71,14 +71,21 @@ export function Navigation() {
                     </Link>
                 </nav>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden p-2 text-foreground"
-                    onClick={toggleMenu}
-                    aria-label="Toggle menu"
-                >
-                    {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                </button>
+                {/* Mobile Controls */}
+                <div className="flex items-center gap-2 md:hidden">
+                    <Link href="/membership">
+                        <Button variant="default" size="sm" className="font-bold">
+                            Join Now
+                        </Button>
+                    </Link>
+                    <button
+                        className="p-2 text-foreground"
+                        onClick={toggleMenu}
+                        aria-label="Toggle menu"
+                    >
+                        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Nav */}
