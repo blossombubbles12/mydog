@@ -72,7 +72,7 @@ export default function MembershipPage() {
                             <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
                                 {[
                                     "Official Membership ID Card",
-                                    "Lagos Dog Carnival Discounts",
+                                    "Lagos Pet Carnival Discounts",
                                     "Priority Event Registration",
                                     "Member-Only Meetups & Walks",
                                     "Exclusive 'Pro' Digital Badge",

@@ -13,20 +13,20 @@ const timeline = [
     {
         year: "2016",
         title: "Where It All Began",
-        description: "The journey started on Instagram, marking the birth of a movement dedicated to pet owners and lovers across Nigeria. Registered membership is now available for doglovers across our social platforms.",
+        description: "The journey started on Instagram, marking the birth of a movement dedicated to pet owners and lovers across Nigeria. Registered membership is now available for petlovers across our social platforms.",
         stats: "Instagram Launch • The Foundation",
         highlight: "Started on Instagram in 2016"
     },
     {
         year: "2019",
-        title: "Lagos Dog Carnival 2019",
-        description: "The very first Lagos Dog Carnival. A historic gathering that sparked the movement of pet lovers in Nigeria.",
-        stats: "150 Dogs • First Carnival",
-        highlight: "Launched the Annual Lagos Dog Carnival"
+        title: "Lagos Pet Carnival 2019",
+        description: "The very first Lagos Pet Carnival. A historic gathering that sparked the movement of pet lovers in Nigeria.",
+        stats: "150 Pets • First Carnival",
+        highlight: "Launched the Annual Lagos Pet Carnival"
     },
     {
         year: "2020",
-        title: "Lagos Dog Carnival 2020",
+        title: "Lagos Pet Carnival 2020",
         description: "Maintained our consistency despite global challenges, celebrating with a unique theme that united our growing community.",
         stats: "Consistent Growth • Unique Theme",
         highlight: "LDC Annual Consistency"
@@ -40,10 +40,10 @@ const timeline = [
     },
     {
         year: "2022",
-        title: "Lagos Dog Carnival 2022",
+        title: "Lagos Pet Carnival 2022",
         description: "Introduced the famous runway show and expanded our reach to national television.",
-        stats: "1,200 Dogs • Fashion Focus",
-        highlight: "Launched Doggy Fashion Runway"
+        stats: "1,200 Pets • Fashion Focus",
+        highlight: "Launched Pet Fashion Runway"
     },
     {
         year: "2023",
@@ -55,15 +55,15 @@ const timeline = [
     {
         year: "2024",
         title: "Carnival 2024 & Playground",
-        description: "Introduced the 'Doggie Playground' concept, making our events more interactive than ever before.",
+        description: "Introduced the 'Pet Playground' concept, making our events more interactive than ever before.",
         stats: "Interactive Zones • Landmark Year",
-        highlight: "Doggie Playground Launch"
+        highlight: "Pet Playground Launch"
     },
     {
         year: "2025",
-        title: "Lagos Dog Carnival 2025",
+        title: "Lagos Pet Carnival 2025",
         description: "The biggest prelude to our record attempt. A massive celebration across Victoria Island.",
-        stats: "3,000 Dogs • Record Prep",
+        stats: "3,000 Pets • Record Prep",
         highlight: "Setting the Stage for Guinness World Record"
     }
 ];
@@ -181,7 +181,7 @@ export default function AboutPage() {
                             7 Years of Tail-Wagging Success
                         </h2>
                         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                            At My Dog And I Group, we’ve celebrated meaningful milestones through impactful events like the Animal Cruelty Must Stop March and the renowned Lagos Dog Carnival. These events have united animal lovers, raised awareness, and promoted animal welfare. We continue to build on these experiences, with exciting upcoming events that bring together the <strong>largest gathering of Pets in Africa</strong>.
+                            At My Dog And I Group, we’ve celebrated meaningful milestones through impactful events like the Animal Cruelty Must Stop March and the renowned Lagos Pet Carnival. These events have united animal lovers, raised awareness, and promoted animal welfare. We continue to build on these experiences, with exciting upcoming events that bring together the <strong>largest gathering of Pets in Africa</strong>.
                         </p>
                     </div>
 
@@ -271,7 +271,7 @@ export default function AboutPage() {
                             </div>
                             <div className="bg-white p-6 rounded-2xl shadow-lg">
                                 <p className="text-4xl font-black text-primary mb-2">2,000+</p>
-                                <p className="text-sm font-medium text-muted-foreground">Dogs Expected</p>
+                                <p className="text-sm font-medium text-muted-foreground">Pets Expected</p>
                             </div>
                             <div className="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-primary">
                                 <p className="text-4xl font-black text-primary mb-2">2,000+</p>
@@ -311,7 +311,7 @@ export default function AboutPage() {
                         </h2>
                         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                             The humans behind the movement. Three unique personalities united by one mission:
-                            making Lagos the most dog-friendly city in Africa.
+                            making Lagos the most pet-friendly city in Africa.
                         </p>
                     </div>
 
@@ -356,7 +356,7 @@ export default function AboutPage() {
                             </div>
                         </motion.div>
 
-                        {/* Gabby - Dog Person */}
+                        {/* Gabby - Pet Person */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -387,7 +387,7 @@ export default function AboutPage() {
                                     </p>
                                     <div className="flex flex-wrap gap-2">
                                         <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-medium">
-                                            🐾 Dog Expert
+                                            🐾 Pet Expert
                                         </span>
                                         <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-medium">
                                             ❤️ Empathetic
@@ -436,7 +436,7 @@ export default function AboutPage() {
 
                     <div className="text-center mt-12">
                         <p className="text-muted-foreground italic">
-                            "Three different personalities, one shared obsession: making every dog in Lagos feel loved." 🐕❤️
+                            "Three different personalities, one shared obsession: making every pet in Lagos feel loved." 🐕❤️
                         </p>
                     </div>
                 </div>

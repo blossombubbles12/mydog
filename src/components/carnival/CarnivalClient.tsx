@@ -28,7 +28,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/lagosdogcarnival.png"
-                        alt="Lagos Dog Carnival Hero"
+                        alt="Lagos Pet Carnival Hero"
                         fill
                         className="object-cover brightness-[0.7]"
                         priority
@@ -42,7 +42,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 drop-shadow-sm">
-                            LAGOS DOG CARNIVAL
+                            LAGOS PET CARNIVAL
                         </h1>
                         <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-xl md:text-2xl font-semibold mb-10">
                             <div className="flex items-center gap-2">
@@ -82,9 +82,9 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[
-                            { icon: "🎨", title: "Dog Fashion Show", desc: "Watch the most stylish pets on the runway" },
-                            { icon: "🏎️", title: "Dog Races", desc: "High-speed thrills for our fastest friends" },
-                            { icon: "🍦", title: "Pet Treats", desc: "Gourmet snacks for dogs and humans" },
+                            { icon: "🎨", title: "Pet Fashion Show", desc: "Watch the most stylish pets on the runway" },
+                            { icon: "🏎️", title: "Pet Races", desc: "High-speed thrills for our fastest friends" },
+                            { icon: "🍦", title: "Pet Treats", desc: "Gourmet snacks for pets and humans" },
                             { icon: "🎁", title: "Goody Bags", desc: "Exclusive gifts for all registered pets" },
                             { icon: "👨‍⚕️", title: "Vet Checks", desc: "On-site professionals for health tips" },
                             { icon: "🎶", title: "Live Music", desc: "Great vibes to keep the energy high" },
@@ -140,7 +140,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
             {/* Intermediate Registration CTA */}
             <section className="py-20 bg-primary text-white text-center">
                 <div className="container px-4">
-                    <h2 className="text-3xl md:text-5xl font-black mb-6">Don't Let Your Dog Miss Out!</h2>
+                    <h2 className="text-3xl md:text-5xl font-black mb-6">Don't Let Your Pet Miss Out!</h2>
                     <p className="text-xl mb-10 max-w-2xl mx-auto opacity-90">
                         Registration is open for all breeds. Be part of the historic Guinness World Record attempt.
                     </p>
@@ -164,7 +164,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         </div>
                         <h2 className="text-4xl md:text-5xl font-black mb-4">The Minds Behind the Magic</h2>
                         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                            The team dedicated to making the Lagos Dog Carnival the most unforgettable experience for you and your pets.
+                            The team dedicated to making the Lagos Pet Carnival the most unforgettable experience for you and your pets.
                         </p>
                     </div>
 
@@ -194,7 +194,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                                 <h3 className="text-2xl font-black mb-2">Jackie Idimogu</h3>
                                 <p className="text-primary font-bold mb-4 uppercase tracking-wider text-sm">Chief Convener / Creator</p>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    The architectural mind behind the Carnival. She breathes life into every detail, from the grand parade to the historical record attempts, ensuring the Lagos Dog Carnival stays the gold standard of pet events in Africa.
+                                    The architectural mind behind the Carnival. She breathes life into every detail, from the grand parade to the historical record attempts, ensuring the Lagos Pet Carnival stays the gold standard of pet events in Africa.
                                 </p>
                             </div>
                         </motion.div>
@@ -224,7 +224,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                                 <h3 className="text-2xl font-black mb-2">Gabby Idimogu</h3>
                                 <p className="text-orange-600 font-bold mb-4 uppercase tracking-wider text-sm">Convener</p>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    Our resident "Animal Whisperer" and master of fun. Gabby is responsible for the chaos, the play, and the magic. If you see a dog wearing a tuxedo or a cat judging a competition, that's likely her doing. She ensures 100% tail-wagging satisfaction!
+                                    Our resident "Animal Whisperer" and master of fun. Gabby is responsible for the chaos, the play, and the magic. If you see a pet wearing a tuxedo or a cat judging a competition, that's likely her doing. She ensures 100% tail-wagging satisfaction!
                                 </p>
                             </div>
                         </motion.div>

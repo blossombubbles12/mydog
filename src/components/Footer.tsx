@@ -25,7 +25,7 @@ export function Footer() {
                             My Dog and I Group is a non-profit pet service company actively building a vibrant,
                             inclusive community for all pets and their owners in Nigeria. Starting on Instagram
                             in 2016, we&apos;ve grown into Africa&apos;s largest gathering of Pets with over 50,000 members.
-                            Join us for the Lagos Dog Carnival, community walks, and more!
+                            Join us for the Lagos Pet Carnival, community walks, and more!
                         </p>
                         <div className="flex gap-4">
                             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

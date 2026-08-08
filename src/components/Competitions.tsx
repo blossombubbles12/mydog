@@ -24,8 +24,8 @@ const competitions = [
         prize: "Pro Equipment Kit",
     },
     {
-        title: "Happiest Dog",
-        description: "A crowd-voting contest for the dog with the best smile and vibes.",
+        title: "Happiest Pet",
+        description: "A crowd-voting contest for the pet with the best smile and vibes.",
         icon: Trophy,
         prize: "Year's Supply of Treats",
     },
@@ -38,7 +38,7 @@ export function Competitions() {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Competitions & Activities</h2>
                     <p className="mt-4 text-lg text-muted-foreground">
-                        Show off your dog's talent and win big!
+                        Show off your pet's talent and win big!
                     </p>
                 </div>
 

@@ -27,7 +27,7 @@ export function SafetyInfo() {
                             <div>
                                 <h3 className="text-xl font-bold mb-2">Vet Checks Mandatory</h3>
                                 <p className="text-muted-foreground">
-                                    All dogs must have an up-to-date vaccination card (Anti-Rabies / DHLPP). On-site vets will inspect every dog at entry.
+                                    All pets must have an up-to-date vaccination card (Anti-Rabies / DHLPP). On-site vets will inspect every pet at entry.
                                 </p>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ export function SafetyInfo() {
                             <div>
                                 <h3 className="text-xl font-bold mb-2">Leash Rules</h3>
                                 <p className="text-muted-foreground">
-                                    No retractable leashes allowed. All dogs must be on a fixed leash (max 6ft) at all times unless in designated off-leash zones.
+                                    No retractable leashes allowed. All pets must be on a fixed leash (max 6ft) at all times unless in designated off-leash zones.
                                 </p>
                             </div>
                         </div>

@@ -12,7 +12,7 @@ import Link from "next/link";
 const events = [
     {
         id: 1,
-        title: "Lagos Dog Carnival 2026",
+        title: "Lagos Pet Carnival 2026",
         date: "December 13, 2026",
         time: "9:00 AM - 6:00 PM",
         location: "Tafawa Balewa Square, Lagos",
@@ -25,7 +25,7 @@ const events = [
     },
     {
         id: 2,
-        title: "Sunday Dog Walk - Lekki",
+        title: "Sunday Pet Walk - Lekki",
         date: "January 12, 2026",
         time: "7:00 AM - 9:00 AM",
         location: "Freedom Park, Lekki Phase 1",
@@ -52,35 +52,35 @@ const events = [
         title: "Adoption Drive",
         date: "January 25, 2026",
         time: "11:00 AM - 5:00 PM",
-        location: "Victoria Island Dog Park",
+        location: "Victoria Island Pet Park",
         category: "adoption",
         attendees: 100,
         image: "homepage2_gsja4s",
-        description: "Meet adorable rescue dogs looking for their forever homes.",
+        description: "Meet adorable rescue pets looking for their forever homes.",
         price: "Free"
     },
     {
         id: 5,
-        title: "Dog Agility Competition",
+        title: "Pet Agility Competition",
         date: "February 8, 2026",
         time: "9:00 AM - 4:00 PM",
         location: "Ikoyi Sports Ground",
         category: "competition",
         attendees: 80,
         image: "homepage1_lnnftx",
-        description: "Watch talented dogs navigate obstacle courses. Prizes for top performers!",
+        description: "Watch talented pets navigate obstacle courses. Prizes for top performers!",
         price: "₦5,000"
     },
     {
         id: 6,
-        title: "Beach Day with Dogs",
+        title: "Beach Day with Pets",
         date: "February 15, 2026",
         time: "8:00 AM - 12:00 PM",
         location: "Elegushi Beach",
         category: "social",
         attendees: 60,
         image: "homepage3_fqiznc",
-        description: "Let your dogs run free on the beach! Swimming, fetch, and fun.",
+        description: "Let your pets run free on the beach! Swimming, fetch, and fun.",
         price: "₦2,000"
     }
 ];
@@ -88,7 +88,7 @@ const events = [
 const categories = [
     { value: "all", label: "All Events" },
     { value: "carnival", label: "Carnival" },
-    { value: "walk", label: "Dog Walks" },
+    { value: "walk", label: "Pet Walks" },
     { value: "training", label: "Training" },
     { value: "adoption", label: "Adoptions" },
     { value: "competition", label: "Competitions" },

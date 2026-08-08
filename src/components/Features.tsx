@@ -7,12 +7,12 @@ const features = [
     {
         icon: MapPin,
         title: "Discover Local Events",
-        description: "Find dog-friendly gatherings, festivals, and playdates happening right in your neighborhood.",
+        description: "Find pet-friendly gatherings, festivals, and playdates happening right in your neighborhood.",
     },
     {
         icon: Users,
         title: "Connect with Owners",
-        description: "Join a vibrant community of passionate dog lovers. Share tips, stories, and make new best friends.",
+        description: "Join a vibrant community of passionate pet lovers. Share tips, stories, and make new best friends.",
     },
     {
         icon: Calendar,
@@ -47,7 +47,7 @@ export function Features() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="mt-4 text-lg text-muted-foreground"
                     >
-                        We help you turn every outing into an adventure. Discover why thousands of dog owners use My Dog & I.
+                        We help you turn every outing into an adventure. Discover why thousands of pet owners use My Dog & I.
                     </motion.p>
                 </div>
 

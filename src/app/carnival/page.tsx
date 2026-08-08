@@ -13,7 +13,7 @@ export default async function CarnivalPage() {
             cloudinaryId: asset.public_id,
             type: 'image' as const,
             alt: asset.context?.custom?.alt || "Carnival Moment",
-            caption: asset.context?.custom?.caption || "Lagos Dog Carnival"
+            caption: asset.context?.custom?.caption || "Lagos Pet Carnival"
         }))
         .sort(() => Math.random() - 0.5)
         .slice(0, 7);

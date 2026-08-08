@@ -98,7 +98,7 @@ export default function CarnivalRegistrationForm() {
                 setStep(4);
                 toast({
                     title: "Registration Successful!",
-                    description: "You have successfully registered for the Lagos Dog Carnival.",
+                    description: "You have successfully registered for the Lagos Pet Carnival.",
                 });
             } else {
                 toast({
@@ -472,7 +472,7 @@ export default function CarnivalRegistrationForm() {
                                         <div className="border-t border-dashed my-6" />
 
                                         <SocialShare
-                                            title="I just registered for the Lagos Dog Carnival 2026! 🐾"
+                                            title="I just registered for the Lagos Pet Carnival 2026! 🐾"
                                             description="I'm officially part of the World Record attempt! Join me and let's make history together."
                                         />
                                     </div>
@@ -543,7 +543,7 @@ function TicketCard({ formData, entryId }: { formData: FormData; entryId: string
                 <div className="flex justify-between items-start">
                     <div>
                         <p className="text-xs text-muted-foreground uppercase tracking-widest">Event</p>
-                        <h3 className="font-black text-xl leading-tight">Lagos Dog <br />Carnival '26</h3>
+                        <h3 className="font-black text-xl leading-tight">Lagos Pet <br />Carnival '26</h3>
                     </div>
                     <Ticket className="w-8 h-8 text-orange-500" />
                 </div>

@@ -14,7 +14,7 @@ const threads = [
         color: "bg-red-100 text-red-700"
     },
     {
-        title: "Review: The new dog park at Victoria Island is amazing",
+        title: "Review: The new pet park at Victoria Island is amazing",
         author: "LagosPupMom",
         replies: 56,
         likes: 189,

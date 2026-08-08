@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     default: "My Dog and I | Africa's Largest Gathering of Pets",
     template: "%s | My Dog and I"
   },
-  description: "Experience the joy of pet ownership with Africa's largest gathering of Pets. Join 50,000+ pet lovers for events, the Lagos Dog Carnival, and our Guinness World Record attempt.",
-  keywords: ["Pet community Lagos", "Africa's largest gathering of pets", "Lagos Dog Carnival", "Pet events Nigeria", "Pet owners Nigeria", "Pet lovers Lagos", "Guinness World Record pet gathering", "My Dog and I"],
+  description: "Experience the joy of pet ownership with Africa's largest gathering of Pets. Join 50,000+ pet lovers for events, the Lagos Pet Carnival, and our Guinness World Record attempt.",
+  keywords: ["Pet community Lagos", "Africa's largest gathering of pets", "Lagos Pet Carnival", "Pet events Nigeria", "Pet owners Nigeria", "Pet lovers Lagos", "Guinness World Record pet gathering", "My Dog and I"],
   authors: [{ name: "My Dog and I Team" }],
   creator: "My Dog and I",
   publisher: "My Dog and I",

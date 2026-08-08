@@ -9,7 +9,7 @@ export function AboutHero() {
             <div className="absolute inset-0 z-0">
                 <CldImage
                     src="homepage7_dl6l1z"
-                    alt="Community and dogs"
+                    alt="Community and pets"
                     fill
                     className="object-cover brightness-50"
                     priority
@@ -26,8 +26,8 @@ export function AboutHero() {
                         Our Story
                     </h1>
                     <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
-                        Founded on the belief that life is better with a dog by your side.
-                        We are building the largest community of dog lovers in West Africa.
+                        Founded on the belief that life is better with a pet by your side.
+                        We are building the largest community of pet lovers in West Africa.
                     </p>
                 </motion.div>
             </div>
