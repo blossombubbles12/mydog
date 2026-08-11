@@ -31,9 +31,12 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         src="/lagosdogcarnival2.png"
                         alt="Lagos Dog Carnival Hero"
                         fill
-                        className="object-cover brightness-[0.7]"
+                        className="object-cover brightness-[0.6] saturate-[0.95]"
                         priority
                     />
+                    {/* Cinematic scrim keeps text readable over the bright image */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/35 to-black/75" />
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_48%,rgba(0,0,0,0.7),rgba(0,0,0,0.28)_55%,rgba(0,0,0,0)_100%)]" />
                 </div>
 
                 <div className="container relative z-10 px-4 text-center text-white">
@@ -47,17 +50,17 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 2.6, duration: 0.6 }}
-                            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-yellow-400/40 rounded-full px-4 py-1.5 text-sm md:text-base font-bold uppercase tracking-[0.2em] text-yellow-300 mb-6"
+                            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-yellow-400/40 rounded-full px-4 py-1.5 text-sm md:text-base font-bold uppercase tracking-[0.2em] text-yellow-300 mb-6 shadow-[0_2px_16px_rgba(0,0,0,0.45)]"
                         >
                             <Sparkles className="w-4 h-4" />
                             2026 Theme: Lagos Pet Carnival
                         </motion.div>
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-xl md:text-2xl font-semibold mb-10">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-xl md:text-2xl font-semibold mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
                             <div className="flex items-center gap-2">
                                 <Calendar className="text-yellow-400" />
                                 <span>December 13th, 2026</span>
                             </div>
-                            <div className="hidden md:block w-2 h-2 bg-white rounded-full" />
+                            <div className="hidden md:block w-2 h-2 bg-white rounded-full shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
                             <div className="flex items-center gap-2">
                                 <MapPin className="text-yellow-400" />
                                 <span>18 Wole Olateju Crescent, Lekki Phase 1</span>
