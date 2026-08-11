@@ -28,7 +28,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
             <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/lagosdogcarnival.png"
+                        src="/lagosdogcarnival2.png"
                         alt="Lagos Dog Carnival Hero"
                         fill
                         className="object-cover brightness-[0.7]"
@@ -73,14 +73,14 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                 </div>
             </section>
 
-            <div className="relative w-full bg-white py-6">
-                <div className="container px-4">
+            <div className="relative bg-white py-6">
+                <div className="container px-4 flex justify-center">
                     <Image
                         src="/lagospetcarnival.png"
                         alt="Lagos Pet Carnival Banner"
                         width={1200}
                         height={400}
-                        className="w-full h-auto rounded-2xl object-cover border border-yellow-400/20 shadow-2xl"
+                        className="w-full max-w-2xl h-auto rounded-2xl object-contain border border-yellow-400/20 shadow-2xl"
                         priority
                     />
                 </div>
