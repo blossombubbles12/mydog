@@ -90,8 +90,6 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                 </div>
             </div>
 
-            <AnniversaryBanner />
-
             {/* Stats */}
             <CarnivalStats />
 
@@ -294,6 +292,9 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                     </div>
                 </div>
             </section>
+
+            {/* A Decade of Impact */}
+            <AnniversaryBanner />
         </div>
     );
 }

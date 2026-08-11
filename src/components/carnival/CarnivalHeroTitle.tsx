@@ -23,9 +23,9 @@ export function CarnivalHeroTitle() {
     const swapped = stage === "pet";
 
     return (
-        <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 uppercase whitespace-nowrap drop-shadow-[0_4px_14px_rgba(0,0,0,0.85)]">
-            <span className={WORD_GRADIENT}>LAGOS&nbsp;</span>
-            <span className="relative inline-block text-center">
+        <h1 className="text-[2.2rem] leading-[1.1] sm:text-5xl md:text-8xl font-black tracking-tighter mb-6 uppercase drop-shadow-[0_4px_14px_rgba(0,0,0,0.85)]">
+            <span className={`${WORD_GRADIENT} inline-block`}>LAGOS</span>{" "}
+            <span className="relative inline-block text-center align-baseline">
                 {/* Hidden spacer keeps the width stable so CARNIVAL never jumps */}
                 <span className="invisible" aria-hidden="true">
                     DOG
@@ -62,8 +62,8 @@ export function CarnivalHeroTitle() {
                         )}
                     </AnimatePresence>
                 </span>
-            </span>
-            <span className={WORD_GRADIENT}>&nbsp;CARNIVAL</span>
+            </span>{" "}
+            <span className={`${WORD_GRADIENT} inline-block`}>CARNIVAL</span>
         </h1>
     );
 }

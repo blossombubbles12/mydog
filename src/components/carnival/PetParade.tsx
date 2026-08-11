@@ -125,11 +125,10 @@ export function PetParade() {
                         Big or small, they all belong
                     </span>
                     <h2 className="mt-6 text-4xl md:text-6xl font-black text-[#0B1F3A] leading-[1.05]">
-                        Cute. Cuddly. &amp; Everything in Between.
+                        Every Pet Belongs.
                     </h2>
                     <p className="mt-6 text-lg md:text-xl text-[#33466B] leading-relaxed">
-                        Whether fluffy, furry, or feathered, every pet is a superstar at Lagos Pet
-                        Carnival. Bring your joy. Bring your pet.
+                        Cute, cuddly, furry or feathered — bring your pet, we&apos;ll celebrate them all.
                     </p>
                 </motion.div>
 
