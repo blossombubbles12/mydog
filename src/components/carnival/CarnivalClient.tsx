@@ -60,7 +60,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                             <div className="hidden md:block w-2 h-2 bg-white rounded-full" />
                             <div className="flex items-center gap-2">
                                 <MapPin className="text-yellow-400" />
-                                <span>Tafawa Balewa Square, Lagos</span>
+                                <span>18 Wole Olateju Crescent, Lekki Phase 1</span>
                             </div>
                         </div>
 
@@ -258,7 +258,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                 <div className="container px-4 relative z-10">
                     <h2 className="text-4xl md:text-6xl font-black mb-8">Ready for Dec 13th?</h2>
                     <p className="text-xl md:text-2xl text-white/70 mb-12 max-w-2xl mx-auto">
-                        Join Africa's biggest pet celebration at TBS. Registration covers entry for 1 Pet & 1 Human.
+                        Join Africa's biggest pet celebration at 18 Wole Olateju Crescent, Lekki Phase 1. Registration covers entry for 1 Pet & 1 Human.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-8">
                         <Link href="/carnival/register" className="w-full sm:w-auto">

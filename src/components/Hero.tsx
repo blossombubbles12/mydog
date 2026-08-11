@@ -23,7 +23,7 @@ const slides = [
     {
         id: 2,
         title: "Breaking History in 2026",
-        description: "Be part of our Guinness World Record attempt at Tafawa Balewa Square. December 13th, 2026.",
+        description: "Be part of our Guinness World Record attempt at 18 Wole Olateju Crescent, Lekki Phase 1. December 13th, 2026.",
         image: "/carnival.png",
         cloudinaryId: "homepage2_gsja4s",
         primaryCTA: { text: "Explore Carnival", url: "/carnival" },
@@ -81,7 +81,7 @@ export function Hero() {
                     </h1>
 
                     <p className="text-xl md:text-3xl text-white/90 max-w-3xl mx-auto drop-shadow-sm font-medium leading-relaxed">
-                        Join Africa&apos;s largest gathering of Pets. Making history on <span className="text-yellow-400 font-bold">Dec 13th, 2026</span> at Tafawa Balewa Square.
+                        Join Africa&apos;s largest gathering of Pets. Making history on <span className="text-yellow-400 font-bold">Dec 13th, 2026</span> at 18 Wole Olateju Crescent, Lekki Phase 1.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-10 pb-8">

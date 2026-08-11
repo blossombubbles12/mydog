@@ -260,7 +260,7 @@ export default function AboutPage() {
                         </h2>
                         <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                             This isn't just another carnival. On December 13th, 2026, we're attempting to gather
-                            the <strong>Africa's largest gathering of Pets</strong> at Tafawa Balewa Square.
+                            the <strong>Africa's largest gathering of Pets</strong> at 18 Wole Olateju Crescent, Lekki Phase 1.
                             This is our moment to show the world what African pet lovers can achieve together.
                         </p>
 

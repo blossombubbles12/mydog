@@ -144,7 +144,7 @@ export default async function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-6 left-6 text-white">
                 <p className="text-2xl font-bold">December 13, 2026</p>
-                <p className="text-white/90">Tafawa Balewa Square, Lagos</p>
+                <p className="text-white/90">18 Wole Olateju Crescent, Lekki Phase 1</p>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ const events = [
         title: "Lagos Pet Carnival 2026",
         date: "December 13, 2026",
         time: "9:00 AM - 6:00 PM",
-        location: "Tafawa Balewa Square, Lagos",
+        location: "18 Wole Olateju Crescent, Lekki Phase 1, Lagos",
         category: "carnival",
         attendees: 2500,
         image: "lagos_dog_carnival_20242_ekato6",

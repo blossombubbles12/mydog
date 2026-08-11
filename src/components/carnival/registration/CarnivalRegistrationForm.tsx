@@ -557,7 +557,7 @@ function TicketCard({ formData, entryId }: { formData: FormData; entryId: string
                     </div>
                     <div>
                         <p className="text-xs text-muted-foreground uppercase">Location</p>
-                        <p className="font-bold truncate">{formData.location || "TBS Lagos"}</p>
+                        <p className="font-bold truncate">{formData.location || "18 Wole Olateju Crescent, Lekki Phase 1"}</p>
                     </div>
                     <div>
                         <p className="text-xs text-muted-foreground uppercase">Owner</p>
