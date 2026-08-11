@@ -15,6 +15,7 @@ import { CldImage } from "@/components/media/CldImage";
 import { MediaAsset } from "@/components/media/GalleryGrid";
 import { GalleryPreview } from "@/components/media/GalleryPreview";
 import { Sponsors } from "@/components/Sponsors";
+import { CarnivalHeroTitle } from "./CarnivalHeroTitle";
 
 interface CarnivalClientProps {
     galleryMedia: MediaAsset[];
@@ -41,9 +42,16 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 drop-shadow-sm">
-                            LAGOS DOG CARNIVAL
-                        </h1>
+                        <CarnivalHeroTitle />
+                        <motion.div
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 2.6, duration: 0.6 }}
+                            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-yellow-400/40 rounded-full px-4 py-1.5 text-sm md:text-base font-bold uppercase tracking-[0.2em] text-yellow-300 mb-6"
+                        >
+                            <Sparkles className="w-4 h-4" />
+                            2026 Theme: Lagos Pet Carnival
+                        </motion.div>
                         <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-xl md:text-2xl font-semibold mb-10">
                             <div className="flex items-center gap-2">
                                 <Calendar className="text-yellow-400" />

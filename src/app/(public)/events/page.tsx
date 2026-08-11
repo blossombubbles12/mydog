@@ -12,7 +12,7 @@ import Link from "next/link";
 const events = [
     {
         id: 1,
-        title: "Lagos Dog Carnival 2026",
+        title: "Lagos Pet Carnival 2026",
         date: "December 13, 2026",
         time: "9:00 AM - 6:00 PM",
         location: "Tafawa Balewa Square, Lagos",
