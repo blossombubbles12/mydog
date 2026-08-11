@@ -25,7 +25,7 @@ const goals = [
 ];
 
 const impacts = [
-  { number: "20", label: "Families Reached", sub: "Pet-loving households", icon: Users },
+  { number: "20", label: "Families Reached", sub: "Dog-loving households", icon: Users },
   { number: "180+", label: "Food Items",      sub: "Essential daily staples", icon: Package },
   { number: "100%", label: "Transparent",     sub: "All donors named publicly", icon: Star },
   { number: "0",    label: "Admin Fees",      sub: "Every Naira goes directly to aid", icon: Heart },
@@ -35,20 +35,20 @@ const steps = [
   { step: "01", title: "You Donate",         body: "Send cash to the Fidelity Bank account or reach out to donate food items directly." },
   { step: "02", title: "We Acknowledge",     body: "Every donor is publicly announced. Total transparency and accountability is our promise." },
   { step: "03", title: "We Procure & Pack",  body: "Items are sourced, sorted and packed into family bundles within the community." },
-  { step: "04", title: "Families Receive",   body: "20 pet-loving households receive their full food pack — pets included in the blessing." },
+  { step: "04", title: "Families Receive",   body: "20 dog-loving households receive their full food pack — dogs included in the blessing." },
 ];
 
 const testimonials = [
-  { quote: "The hardship is real. Many of us are struggling to feed our families AND our pets. This initiative means the world.", name: "Lagos Pet Mom", paws: 5 },
-  { quote: "I never imagined a pet community would also care about human welfare. My Dog and I has proven that love has no limits.", name: "Abuja Pet Dad", paws: 5 },
+  { quote: "The hardship is real. Many of us are struggling to feed our families AND our pets. This initiative means the world.", name: "Lagos Dog Mom", paws: 5 },
+  { quote: "I never imagined a pet community would also care about human welfare. My Dog and I has proven that love has no limits.", name: "Abuja Dog Dad", paws: 5 },
   { quote: "Pure love. Pure community. This is exactly what Nigeria needs right now — people who show up for each other.", name: "Port Harcourt Member", paws: 5 },
 ];
 
 const faqs = [
   { q: "Can I donate food items instead of cash?", a: "Absolutely! We welcome both cash and physical items. Contact us to arrange collection or drop-off." },
   { q: "How do I know my donation was received?", a: "We publicly announce every donation — your name and contribution will be shared with the community." },
-  { q: "Can pets really eat these food items?", a: "Yes! Rice, eggs, and other items on our list are perfectly safe and nutritious for pets. Every pack benefits both the family and their pet." },
-  { q: "How are beneficiaries selected?", a: "Community members in genuine need are identified through our trusted pet-lover network. Priority is given to families in the most difficult situations." },
+  { q: "Can dogs really eat these food items?", a: "Yes! Rice, eggs, and other items on our list are perfectly safe and nutritious for dogs. Every pack benefits both the family and their pet." },
+  { q: "How are beneficiaries selected?", a: "Community members in genuine need are identified through our trusted dog-lover network. Priority is given to families in the most difficult situations." },
 ];
 
 /* ─── HELPERS ─────────────────────────────────────────────────── */
@@ -140,7 +140,7 @@ export default function FoodbankPage() {
           <div className="relative w-full h-[300px] md:h-[480px] rounded-[2.5rem] shadow-2xl overflow-hidden border-4 border-white">
             <Image 
               src="/foodbank1.jpeg" 
-              alt="Petlovers Community Foodbank" 
+              alt="Doglovers Community Foodbank" 
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
               priority
@@ -171,13 +171,13 @@ export default function FoodbankPage() {
         </motion.div>
 
         <motion.h1 {...fade(0.2)} className="text-5xl md:text-7xl font-black text-foreground mb-5 leading-tight max-w-4xl">
-          Petlovers Community<br />
+          Doglovers Community<br />
           <span className="text-primary">Foodbank AID</span>
         </motion.h1>
 
         <motion.p {...fade(0.3)} className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-8 font-medium leading-relaxed">
-          Nigeria is facing one of its toughest economic seasons. As pet lovers, we refuse to look away.
-          We are feeding families — and their beloved pets — together.
+          Nigeria is facing one of its toughest economic seasons. As dog lovers, we refuse to look away.
+          We are feeding families — and their beloved dogs — together.
         </motion.p>
 
         <motion.div {...fade(0.4)} className="flex flex-wrap gap-4 justify-center">
@@ -200,7 +200,7 @@ export default function FoodbankPage() {
           className="flex gap-16 whitespace-nowrap font-bold text-lg">
           {[...Array(4)].map((_,i)=>(
             <span key={i} className="flex items-center gap-3">
-              🐾 Help a Pet-Loving Family &nbsp;|&nbsp; 🍚 20 Bags of Rice Needed &nbsp;|&nbsp; ❤️ Every Naira Counts &nbsp;|&nbsp; 🐕 Pets Also Benefit
+              🐾 Help a Dog-Loving Family &nbsp;|&nbsp; 🍚 20 Bags of Rice Needed &nbsp;|&nbsp; ❤️ Every Naira Counts &nbsp;|&nbsp; 🐕 Dogs Also Benefit
             </span>
           ))}
         </motion.div>
@@ -215,7 +215,7 @@ export default function FoodbankPage() {
               <span className="text-primary font-black uppercase tracking-widest text-sm">Our Story</span>
               <h2 className="text-4xl md:text-5xl font-black mt-3 mb-6 leading-tight">Why We Started This Initiative</h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-                <p>These past few months have been very tough for us Nigerians. My position in the pet-lovers community opens me up to hearing all of the hardships and the struggles that pet parents are going through.</p>
+                <p>These past few months have been very tough for us Nigerians. My position in the dog-lovers community opens me up to hearing all of the hardships and the struggles that pet parents are going through.</p>
                 <p>My Dog and I Group is actively trying to put together items that we can share amongst our community members. We try to assist as best we could to ease the sting of the hardships of our people — but we also want to give everyone an opportunity to chime in and help.</p>
                 <p className="text-foreground font-bold text-xl uppercase tracking-tighter">Everyone can partake in the sharing of these items.</p>
               </div>
@@ -244,7 +244,7 @@ export default function FoodbankPage() {
               className="object-contain bg-secondary/20 transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black/60 to-transparent text-white">
-              <p className="font-black text-2xl uppercase tracking-tighter">Pet-Friendly AID</p>
+              <p className="font-black text-2xl uppercase tracking-tighter">Dog-Friendly AID</p>
               <p className="text-sm opacity-80">Ensuring our furry friends are also fed.</p>
             </div>
           </motion.div>
@@ -272,8 +272,8 @@ export default function FoodbankPage() {
             <span className="text-primary font-black uppercase tracking-widest text-sm bg-primary/10 px-4 py-2 rounded-full border border-primary/20 shadow-sm">Current Progress</span>
             <h2 className="text-5xl md:text-6xl font-black mt-8 mb-6 tracking-tighter leading-none">What We Need to Raise</h2>
             <p className="text-muted-foreground text-xl max-w-2xl mx-auto leading-relaxed font-medium">
-              Each of these essential items will go directly to 20 pet-loving families. 
-              <span className="text-foreground font-bold"> Every Naira donated feeds both the family and their beloved pets.</span>
+              Each of these essential items will go directly to 20 dog-loving families. 
+              <span className="text-foreground font-bold"> Every Naira donated feeds both the family and their beloved dogs.</span>
             </p>
           </motion.div>
 
@@ -331,7 +331,7 @@ export default function FoodbankPage() {
           <motion.div {...fade(0.3)} className="mt-16 bg-accent/10 border-2 border-dashed border-accent/30 rounded-[3rem] p-10 text-center relative overflow-hidden group">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
             <p className="text-xl md:text-2xl font-black text-foreground leading-tight max-w-3xl mx-auto uppercase tracking-tighter">
-              🐕 All food items on this list are <span className="text-primary underline decoration-4 underline-offset-4">safe and nutritious for pets</span> — your kindness feeds the whole household.
+              🐕 All food items on this list are <span className="text-primary underline decoration-4 underline-offset-4">safe and nutritious for dogs</span> — your kindness feeds the whole household.
             </p>
           </motion.div>
         </section>
@@ -392,7 +392,7 @@ export default function FoodbankPage() {
               </motion.div>
               <h2 className="text-4xl md:text-6xl font-black mb-5 leading-tight">Be Part of the Change</h2>
               <p className="text-xl opacity-90 max-w-2xl mx-auto font-medium leading-relaxed">
-                A little from many makes a lot. Your donation — big or small — will be publicly acknowledged and go directly toward feeding 20 pet-loving families.
+                A little from many makes a lot. Your donation — big or small — will be publicly acknowledged and go directly toward feeding 20 dog-loving families.
               </p>
             </div>
 
@@ -472,7 +472,7 @@ export default function FoodbankPage() {
 
             <h2 className="text-4xl md:text-5xl font-black mb-4">Together We Are Stronger</h2>
             <p className="text-xl text-muted-foreground max-w-xl mx-auto mb-8">
-              The pet lovers community is built on love, trust, and showing up for each other. Let us show up for our people.
+              The dog lovers community is built on love, trust, and showing up for each other. Let us show up for our people.
             </p>
             <a href="#donate">
               <Button size="lg" className="bg-primary text-primary-foreground font-black text-xl px-12 py-7 h-auto rounded-2xl shadow-lg shadow-primary/30 hover:scale-105 transition-transform">

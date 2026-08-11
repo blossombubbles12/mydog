@@ -40,7 +40,7 @@ export default function RegistrationWizard() {
                 <div className="p-8 md:p-12">
                     {step < 3 && (
                         <div className="text-center mb-8">
-                            <h1 className="text-3xl font-black mb-2">Join the Pack</h1>
+                            <h1 className="text-3xl font-black mb-2">Join the Woof Pack</h1>
                             <p className="text-muted-foreground">Step {step} of 2</p>
                         </div>
                     )}
@@ -111,8 +111,8 @@ export default function RegistrationWizard() {
                                             value={data.role}
                                             onChange={(e) => updateData({ role: e.target.value })}
                                         >
-                                            <option value="owner">Pet Owner 🐕</option>
-                                            <option value="lover">Pet Lover (No Pet yet) ❤️</option>
+                                            <option value="owner">Dog Owner 🐕</option>
+                                            <option value="lover">Dog Lover (No Dog yet) ❤️</option>
                                             <option value="vendor">Vendor / Business 🏪</option>
                                         </select>
                                     </div>
@@ -134,13 +134,13 @@ export default function RegistrationWizard() {
                                         <Dog className="w-10 h-10" />
                                     </div>
                                     <h2 className="text-2xl font-bold">About your furry friend</h2>
-                                    <p className="text-muted-foreground">Tell us about your pet (optional)</p>
+                                    <p className="text-muted-foreground">Tell us about your pup (optional)</p>
                                 </div>
 
                                 {data.role === 'lover' ? (
                                     <div className="text-center p-8 bg-secondary/20 rounded-xl border-2 border-dashed">
                                         <Dog className="w-16 h-16 mx-auto mb-4 text-muted-foreground" />
-                                        <p className="font-medium">No pet? No problem!</p>
+                                        <p className="font-medium">No dog? No problem!</p>
                                         <p className="text-sm text-muted-foreground mt-2">
                                             You're here for the community and cuddles. Skip ahead!
                                         </p>
@@ -148,7 +148,7 @@ export default function RegistrationWizard() {
                                 ) : (
                                     <div className="space-y-4">
                                         <div>
-                                            <label className="text-sm font-medium mb-2 block">Pet's Name</label>
+                                            <label className="text-sm font-medium mb-2 block">Dog's Name</label>
                                             <input
                                                 placeholder="Max, Bella, Charlie..."
                                                 className="w-full p-4 rounded-xl border bg-background focus:ring-2 ring-primary/50 outline-none transition-all"

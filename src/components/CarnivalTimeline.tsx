@@ -13,13 +13,13 @@ const history = [
     },
     {
         year: "2019",
-        title: "Lagos Pet Carnival 2019",
-        description: "The very first Lagos Pet Carnival. 150 pets and their owners gathered at Freedom Park.",
+        title: "Lagos Dog Carnival 2019",
+        description: "The very first Lagos Dog Carnival. 150 dogs and their owners gathered at Freedom Park.",
         icon: Star,
     },
     {
         year: "2020",
-        title: "Lagos Pet Carnival 2020",
+        title: "Lagos Dog Carnival 2020",
         description: "Maintained consistency with a unique theme that brought hope and joy during challenging times.",
         icon: Calendar,
     },
@@ -31,7 +31,7 @@ const history = [
     },
     {
         year: "2022",
-        title: "Lagos Pet Carnival 2022",
+        title: "Lagos Dog Carnival 2022",
         description: "Introduced the famous runway show. Featured on national TV.",
         icon: Star,
     },
@@ -49,7 +49,7 @@ const history = [
     },
     {
         year: "2025",
-        title: "Lagos Pet Carnival 2025",
+        title: "Lagos Dog Carnival 2025",
         description: "Setting the stage for the big record. A massive parade through Victoria Island.",
         icon: Users,
     },

@@ -22,7 +22,7 @@ export function MissionSection() {
                             Connecting Paws, <br /> Creating Joy.
                         </h3>
                         <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                            My Dog and I was born from a simple observation: pet owners in Lagos needed a safe,
+                            My Dog and I was born from a simple observation: dog owners in Lagos needed a safe,
                             fun, and organized way to connect. What started as a small WhatsApp group for
                             weekend walks has blossomed into a movement.
                         </p>
@@ -43,7 +43,7 @@ export function MissionSection() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-xl">Community First</h4>
-                                    <p className="text-muted-foreground">Building a support system for every pet parent.</p>
+                                    <p className="text-muted-foreground">Building a support system for every dog parent.</p>
                                 </div>
                             </div>
                         </div>
@@ -59,13 +59,13 @@ export function MissionSection() {
                     >
                         <CldImage
                             src="homepage1_lnnftx"
-                            alt="Connection between pet and human"
+                            alt="Connection between dog and human"
                             fill
                             className="object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                         <div className="absolute bottom-6 left-6 text-white max-w-xs">
-                            <p className="font-serif italic text-2xl">"Pets are not our whole life, but they make our lives whole."</p>
+                            <p className="font-serif italic text-2xl">"Dogs are not our whole life, but they make our lives whole."</p>
                         </div>
                     </motion.div>
 

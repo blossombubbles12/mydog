@@ -8,7 +8,7 @@ import { CldImage } from "@/components/media/CldImage";
 const videos = [
     {
         id: 1,
-        title: "Lagos Pet Carnival Highlights",
+        title: "Lagos Dog Carnival Highlights",
         duration: "2:30",
         image: "lagos_dog_carnival_20242_ekato6"
     },

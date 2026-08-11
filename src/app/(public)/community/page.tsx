@@ -49,7 +49,7 @@ export default function CommunityPage() {
                         transition={{ duration: 0.7, delay: 0.1 }}
                         className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-orange-600 to-amber-600 pb-2"
                     >
-                        Connect With Pet Lovers
+                        Connect With Dog Lovers
                     </motion.h1>
 
                     <motion.p
@@ -58,7 +58,7 @@ export default function CommunityPage() {
                         transition={{ duration: 0.7, delay: 0.2 }}
                         className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl leading-relaxed"
                     >
-                        Join the <span className="text-primary font-bold">Record breaking pet lovers group</span>. A vibrant community dedicated to live training discussions, pet stories, and our official Guinness World Record attempt.
+                        Join the <span className="text-primary font-bold">Record breaking pet lovers group</span>. A vibrant community dedicated to live training discussions, dog stories, and our official Guinness World Record attempt.
                     </motion.p>
 
                     <motion.div
@@ -94,11 +94,11 @@ export default function CommunityPage() {
                         <Card className="bg-white/80 backdrop-blur-sm border-none shadow-lg">
                             <CardHeader>
                                 <Mic className="w-10 h-10 text-primary mb-2" />
-                                <CardTitle className="text-2xl">Live Pet Talk</CardTitle>
+                                <CardTitle className="text-2xl">Live Dog Talk</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-lg">
-                                    Participate in voice chats about training tips, behavior quirks, and daily pet life. Share your story or just listen in while walking your pup.
+                                    Participate in voice chats about training tips, behavior quirks, and daily dog life. Share your story or just listen in while walking your pup.
                                 </p>
                             </CardContent>
                         </Card>
@@ -122,7 +122,7 @@ export default function CommunityPage() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-lg">
-                                    Connect directly with local pet lovers. Find walking partners, playdate friends, and a support system that gets it.
+                                    Connect directly with local dog lovers. Find walking partners, playdate friends, and a support system that gets it.
                                 </p>
                             </CardContent>
                         </Card>
@@ -154,7 +154,7 @@ export default function CommunityPage() {
                     <PlayCircle className="w-16 h-16 text-primary mx-auto mb-6" />
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">Speak Your Mind (And Bark!)</h2>
                     <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                        We prioritize audio because pet ownership is hands-on. Whether you&apos;re at the park or prepping a meal, our voice sessions let you connect without stopping the fun.
+                        We prioritize audio because dog ownership is hands-on. Whether you&apos;re at the park or prepping a meal, our voice sessions let you connect without stopping the fun.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
                         <div className="bg-white/60 p-6 rounded-2xl">
@@ -167,7 +167,7 @@ export default function CommunityPage() {
                         </div>
                         <div className="bg-white/60 p-6 rounded-2xl">
                             <h3 className="font-bold text-lg mb-2 flex items-center"><Heart className="w-5 h-5 mr-2 text-primary" /> Support</h3>
-                            <p className="text-sm text-muted-foreground">Give and receive support for the ups and downs of pet life.</p>
+                            <p className="text-sm text-muted-foreground">Give and receive support for the ups and downs of dog life.</p>
                         </div>
                     </div>
                 </motion.div>
@@ -185,7 +185,7 @@ export default function CommunityPage() {
                             {[
                                 { step: 1, title: "Click Invite Link", desc: "Use the button below to open the WhatsApp invite." },
                                 { step: 2, title: "Join Group", desc: "Accept the invitation in your WhatsApp app." },
-                                { step: 3, title: "Introduce Your Pet", desc: "Share a photo and say hello to the pack!" },
+                                { step: 3, title: "Introduce Your Dog", desc: "Share a photo and say hello to the pack!" },
                                 { step: 4, title: "Stay Active", desc: "Join voice chats and planned meetups." }
                             ].map((item, idx) => (
                                 <motion.div
@@ -224,7 +224,7 @@ export default function CommunityPage() {
                         {[
                             "Be kind and respectful to all owners and breeds.",
                             "No spam or unrelated promotions.",
-                            "Keep topics pet-focused: Training, Health, Events.",
+                            "Keep topics dog-focused: Training, Health, Events.",
                             "Voice chats are for constructive and friendly participation."
                         ].map((rule, i) => (
                             <li key={i} className="flex items-start text-lg text-muted-foreground">
@@ -256,7 +256,7 @@ export default function CommunityPage() {
                 >
                     <h2 className="text-4xl md:text-6xl font-bold mb-8">Ready to Join the Pack?</h2>
                     <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-                        Your pet&apos;s new best friends are just a click away.
+                        Your dog&apos;s new best friends are just a click away.
                     </p>
                     <Button
                         asChild

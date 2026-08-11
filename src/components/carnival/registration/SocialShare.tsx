@@ -14,8 +14,8 @@ interface SocialShareProps {
 }
 
 export default function SocialShare({
-    title = "I just registered for the Lagos Pet Carnival 2026! 🐾",
-    description = "Join me and let's break a world record together at the biggest pet event in Africa! 🇳🇬",
+    title = "I just registered for the Lagos Dog Carnival 2026! 🐾",
+    description = "Join me and let's break a world record together at the biggest dog event in Africa! 🇳🇬",
     url = "https://lagosdogcarnival.com/carnival/register",
     variant = "full"
 }: SocialShareProps) {
@@ -213,7 +213,7 @@ export default function SocialShare({
             <div className="flex items-center justify-center gap-4 bg-slate-900 text-white p-4 rounded-2xl">
                 <div className="text-right">
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-400">Join the movement</p>
-                    <p className="text-xs font-bold italic">#LagosPetCarnival #GWR2026</p>
+                    <p className="text-xs font-bold italic">#LagosDogCarnival #GWR2026</p>
                 </div>
             </div>
         </div>

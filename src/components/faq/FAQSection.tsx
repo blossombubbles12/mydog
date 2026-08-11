@@ -7,7 +7,7 @@ import { Plus, Minus, HelpCircle } from "lucide-react";
 const faqs = [
     {
         question: "What is My Dog and I?",
-        answer: "My Dog and I is Nigeria's largest community for pet lovers. We organize events, provide resources, and create a space for pet owners to connect, share experiences, and celebrate the bond with their pets.",
+        answer: "My Dog and I is Nigeria's largest community for dog lovers. We organize events, provide resources, and create a space for pet owners to connect, share experiences, and celebrate the bond with their dogs.",
         category: "general"
     },
     {
@@ -16,13 +16,13 @@ const faqs = [
         category: "general"
     },
     {
-        question: "Is the Lagos Pet Carnival free to attend?",
-        answer: "Admission varies by year, but we always have free entry options for spectators. Pet owners registering for competitions or the World Record attempt may have a small registration fee that goes towards the event's sustainability and charity partners.",
+        question: "Is the Lagos Dog Carnival free to attend?",
+        answer: "Admission varies by year, but we always have free entry options for spectators. Dog owners registering for competitions or the World Record attempt may have a small registration fee that goes towards the event's sustainability and charity partners.",
         category: "carnival"
     },
     {
-        question: "What are the requirements for my pet to attend events?",
-        answer: "Safety is our priority. All pets must have up-to-date vaccinations (Anti-Rabies, DHLPP). Pets must be on a leash at all times, and aggressive behavior is not permitted. We always have vets on-site for health checks.",
+        question: "What are the requirements for my dog to attend events?",
+        answer: "Safety is our priority. All dogs must have up-to-date vaccinations (Anti-Rabies, DHLPP). Dogs must be on a leash at all times, and aggressive behavior is not permitted. We always have vets on-site for health checks.",
         category: "safety"
     },
     {
@@ -31,8 +31,8 @@ const faqs = [
         category: "business"
     },
     {
-        question: "Can I bring my pet if it's not well-trained?",
-        answer: "We welcome pets of all training levels, but they must be under your control. We recommend our 'Training Workshop' events if you're looking to improve your pet's social skills before a major carnival.",
+        question: "Can I bring my dog if it's not well-trained?",
+        answer: "We welcome dogs of all training levels, but they must be under your control. We recommend our 'Training Workshop' events if you're looking to improve your dog's social skills before a major carnival.",
         category: "safety"
     }
 ];

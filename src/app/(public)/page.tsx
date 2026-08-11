@@ -3,10 +3,10 @@ import { Hero } from "@/components/Hero";
 
 export const metadata: Metadata = {
   title: "Home | My Dog and I - Africa's Largest Gathering of Pets",
-  description: "Join 50,000+ pet lovers in Lagos. Participating in the annual Lagos Pet Carnival, community walks, and our historic Guinness World Record attempt for Africa's largest gathering of Pets.",
+  description: "Join 50,000+ pet lovers in Lagos. Participating in the annual Lagos Dog Carnival, community walks, and our historic Guinness World Record attempt for Africa's largest gathering of Pets.",
   openGraph: {
     title: "My Dog and I - Africa's Largest Gathering of Pets",
-    description: "Experience the joy of pet ownership with Africa's largest gathering of Pets. Lagos Pet Carnival, Events, and more.",
+    description: "Experience the joy of pet ownership with Africa's largest gathering of Pets. Lagos Dog Carnival, Events, and more.",
     url: "https://mydogandni.com", // Assuming the domain
     siteName: "My Dog and I",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/dtw0ajpwa/image/upload/v1768756809/lagos_dog_carnival_20242_ekato6.jpg", // Using newest brand image
         width: 1200,
         height: 630,
-        alt: "Lagos Pet Carnival",
+        alt: "Lagos Dog Carnival",
       },
     ],
     locale: "en_NG",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "My Dog and I - Africa's Largest Gathering of Pets",
-    description: "Join 50,000+ pet lovers for events, the Lagos Pet Carnival, and our Guinness World Record attempt.",
+    description: "Join 50,000+ pet lovers for events, the Lagos Dog Carnival, and our Guinness World Record attempt.",
     images: ["https://res.cloudinary.com/dtw0ajpwa/image/upload/v1768756809/lagos_dog_carnival_20242_ekato6.jpg"],
   },
 };
@@ -64,7 +64,7 @@ export default async function Home() {
       src: asset.secure_url,
       cloudinaryId: asset.public_id,
       type: 'image' as const,
-      alt: asset.context?.custom?.alt || "Lagos Pet Carnival / My Dog and I Community Moment",
+      alt: asset.context?.custom?.alt || "Lagos Dog Carnival / My Dog and I Community Moment",
       caption: asset.context?.custom?.caption || "Moment"
     }));
 
@@ -76,7 +76,7 @@ export default async function Home() {
 
   // Pick specific images for different sections
   const galleryMedia = allImages.slice(0, 7);
-  const carnivalImage = allImages[7] || { cloudinaryId: "lagos_dog_carnival_20242_ekato6", alt: "Lagos Pet Carnival" };
+  const carnivalImage = allImages[7] || { cloudinaryId: "lagos_dog_carnival_20242_ekato6", alt: "Lagos Dog Carnival" };
   const aboutImage = allImages[8] || { cloudinaryId: "homepage9_mhc0oh", alt: "Our Story" };
   const finalCtaImage = allImages[9] || { cloudinaryId: "homepage8_zaj3az", alt: "Join the Pack" };
 
@@ -87,7 +87,7 @@ export default async function Home() {
       <Sponsors />
       <AnniversaryBanner />
 
-      {/* Lagos Pet Carnival - BOLD REDESIGN */}
+      {/* Lagos Dog Carnival - BOLD REDESIGN */}
       <section className="py-20 bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30" />
 
@@ -98,7 +98,7 @@ export default async function Home() {
                 <Trophy className="w-4 h-4" /> Guinness World Record 2026
               </div>
               <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                Lagos Pet Carnival
+                Lagos Dog Carnival
               </h2>
               <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
                 Join 2,500+ pet lovers for <strong>Africa&apos;s largest gathering of Pets</strong>.
@@ -112,7 +112,7 @@ export default async function Home() {
                 </div>
                 <div className="text-center p-4 bg-white rounded-xl shadow-sm">
                   <p className="text-2xl font-bold text-primary">2000+</p>
-                  <p className="text-xs text-muted-foreground">Pets</p>
+                  <p className="text-xs text-muted-foreground">Dogs</p>
                 </div>
                 <div className="text-center p-4 bg-white rounded-xl shadow-sm">
                   <p className="text-2xl font-bold text-primary">₦5M</p>
@@ -224,7 +224,7 @@ export default async function Home() {
                   <ShieldCheck className="w-5 h-5 mr-2" /> Safe & Moderated
                 </h3>
                 <p className="text-[#128C7E]">
-                  A respectful space for pet lovers to share, learn, and grow together. Zero spam, 100% pet talk.
+                  A respectful space for dog lovers to share, learn, and grow together. Zero spam, 100% dog talk.
                 </p>
               </div>
             </div>
@@ -237,7 +237,7 @@ export default async function Home() {
                 Join the Record Breaking Pet Lovers Group
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Connect directly with our community of over 50,000 satisfied pet owners. This is the official hub for our Guinness World Record attempt! Get real-time updates and training tips straight to your phone.
+                Connect directly with our community of over 50,000 satisfied dog owners. This is the official hub for our Guinness World Record attempt! Get real-time updates and training tips straight to your phone.
               </p>
 
               <Link href="https://chat.whatsapp.com/C0I2KfbQrpf4Qw5qc8QEDT" target="_blank" rel="noopener noreferrer">
@@ -354,7 +354,7 @@ export default async function Home() {
             Never Miss an Event
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            From weekly pet walks to training sessions and the annual carnival -
+            From weekly dog walks to training sessions and the annual carnival -
             there&apos;s always something happening in the pack.
           </p>
           <Link href="/community">
@@ -414,11 +414,11 @@ export default async function Home() {
                 🚨 Urgent Appeal
               </div>
               <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
-                Petlovers Community <span className="text-primary">Foodbank AID</span>
+                Doglovers Community <span className="text-primary">Foodbank AID</span>
               </h2>
               <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
                 Nigeria's economic hardship is hitting our community hard. We're rallying together to provide 
-                <strong> essential food items for 20 pet-loving families</strong> — their pets included.
+                <strong> essential food items for 20 dog-loving families</strong> — their dogs included.
               </p>
 
               <div className="grid grid-cols-3 gap-4 mb-8">

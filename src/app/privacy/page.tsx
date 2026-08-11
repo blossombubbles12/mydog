@@ -11,7 +11,7 @@ export default function PrivacyPage() {
                         <p className="text-muted-foreground leading-relaxed">
                             My Dog and I ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy
                             explains how we collect, use, disclose, and safeguard your information when you visit our website
-                            or attend our events, including the Lagos Pet Carnival.
+                            or attend our events, including the Lagos Dog Carnival.
                         </p>
                     </section>
 
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
                         <p className="text-muted-foreground mb-3">We may collect the following personal information:</p>
                         <ul className="list-disc pl-6 text-muted-foreground space-y-2">
                             <li>Name, email address, and phone number</li>
-                            <li>Pet's name, breed, and other pet-related information</li>
+                            <li>Dog's name, breed, and other pet-related information</li>
                             <li>Event registration details</li>
                             <li>Payment information (processed securely through third-party providers)</li>
                             <li>Communication preferences</li>

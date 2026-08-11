@@ -77,7 +77,7 @@ export function Hero() {
                     </div>
 
                     <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight text-white drop-shadow-2xl leading-[1.05] uppercase">
-                        Lagos Pet <span className="text-yellow-400">Carnival</span>
+                        Lagos Dog <span className="text-yellow-400">Carnival</span>
                     </h1>
 
                     <p className="text-xl md:text-3xl text-white/90 max-w-3xl mx-auto drop-shadow-sm font-medium leading-relaxed">

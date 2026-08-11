@@ -10,7 +10,7 @@ import { CldImage } from "@/components/media/CldImage";
 const events = [
     {
         id: 1,
-        title: "Sunday Pet Walk - Lekki",
+        title: "Sunday Dog Walk - Lekki",
         date: "Jan 12 • 7:00 AM",
         location: "Freedom Park, Lekki",
         image: "homepage4_sdyykt",
