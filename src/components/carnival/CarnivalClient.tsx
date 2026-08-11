@@ -16,6 +16,7 @@ import { MediaAsset } from "@/components/media/GalleryGrid";
 import { GalleryPreview } from "@/components/media/GalleryPreview";
 import { Sponsors } from "@/components/Sponsors";
 import { CarnivalHeroTitle } from "./CarnivalHeroTitle";
+import { PetParade } from "./PetParade";
 
 interface CarnivalClientProps {
     galleryMedia: MediaAsset[];
@@ -138,6 +139,9 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                     </div>
                 </div>
             </section>
+
+            {/* Pets Belong - Cute, Cuddly & Everything In Between */}
+            <PetParade />
 
             {/* World Record Component */}
             <WorldRecord />
