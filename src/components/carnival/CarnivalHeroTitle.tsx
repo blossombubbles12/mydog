@@ -23,7 +23,7 @@ export function CarnivalHeroTitle() {
     const swapped = stage === "pet";
 
     return (
-        <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 uppercase whitespace-nowrap inline-block">
+        <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 uppercase whitespace-nowrap">
             <span className={WORD_GRADIENT}>LAGOS&nbsp;</span>
             <span className="relative inline-block text-center">
                 {/* Hidden spacer keeps the width stable so CARNIVAL never jumps */}
