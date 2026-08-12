@@ -72,9 +72,8 @@ function ParadeCard({ item, index }: { item: ParadeItem; index: number }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
-            className="p-2 rounded-[2rem] bg-black/[0.04] ring-1 ring-black/5"
         >
-            <div className="group relative overflow-hidden rounded-[calc(2rem-0.5rem)] bg-white shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
+            <div className="group relative overflow-hidden rounded-[2rem] bg-white shadow-[0_12px_40px_rgba(15,23,42,0.08)]">
                 <div className={`flex flex-col lg:flex-row ${item.reversed ? "lg:flex-row-reverse" : ""}`}>
                     {/* Text column */}
                     <div className={`flex-1 flex flex-col justify-center px-7 py-10 md:px-12 md:py-14 ${item.silhouette}`}>

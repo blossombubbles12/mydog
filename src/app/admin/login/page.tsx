@@ -28,7 +28,7 @@ export default function LoginPage() {
 
         if (res.success) {
             toast({ title: "Welcome back!", description: "Logging you in..." })
-            router.push('/admin')
+            router.push('/carnival')
             router.refresh()
         } else {
             toast({
