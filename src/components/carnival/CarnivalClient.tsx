@@ -26,7 +26,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Carnival Hero */}
-            <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/lagosdogcarnival2.png"
@@ -40,11 +40,12 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_48%,rgba(0,0,0,0.7),rgba(0,0,0,0.28)_55%,rgba(0,0,0,0)_100%)]" />
                 </div>
 
-                <div className="container relative z-10 px-4 text-center text-white">
+                <div className="container relative z-10 px-4 text-center text-white py-20 md:py-24">
                     <motion.div
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.8 }}
+                        className="pt-4 md:pt-0"
                     >
                         <CarnivalHeroTitle />
                         <motion.div
@@ -64,7 +65,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                             <div className="hidden md:block w-2 h-2 bg-white rounded-full shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
                             <div className="flex items-center gap-2">
                                 <MapPin className="text-yellow-400" />
-                                <span>18 Wole Olateju Crescent, Lekki Phase 1</span>
+                                <span>Lekki, Lagos, Nigeria</span>
                             </div>
                         </div>
 
