@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { Hero } from "@/components/Hero";
 
 export const metadata: Metadata = {
@@ -54,6 +55,8 @@ import {
 } from "lucide-react";
 
 export default async function Home() {
+  redirect("/carnival");
+
   const cloudinaryAssets = await getMediaFromFolder('mydogandigroup', 100);
 
   // Map to media assets
