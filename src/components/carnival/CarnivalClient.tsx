@@ -277,7 +277,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                 <div className="container px-4 relative z-10">
                     <h2 className="text-4xl md:text-6xl font-black mb-8">Ready for Dec 13th?</h2>
                     <p className="text-xl md:text-2xl text-white/70 mb-12 max-w-2xl mx-auto">
-                        Join Africa's biggest pet celebration at 18 Wole Olateju Crescent, Lekki Phase 1. Registration covers entry for 1 Pet & 1 Human.
+                        Join Africa's biggest pet celebration at 18 Wole Olateju Crescent, Lekki Phase 1. Bring your whole crew — registration covers unlimited pets.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-8">
                         <Link href="/carnival/register" className="w-full sm:w-auto">
