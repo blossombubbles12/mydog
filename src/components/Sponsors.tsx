@@ -14,6 +14,7 @@ const sponsors = [
     { name: "Sponsor 8", image: "/sponsor8.PNG" },
     { name: "Sponsor 9", image: "/sponsor9.png" },
     { name: "Sponsor 10", image: "/sponsor10.jpg" },
+    { name: "Petri", image: "/petritelogo.jpeg" },
 ];
 
 const container: Variants = {
