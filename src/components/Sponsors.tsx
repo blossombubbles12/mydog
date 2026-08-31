@@ -10,12 +10,11 @@ const sponsors = [
     { name: "Sponsor 3", image: "/sponsor3.png" },
     { name: "Sponsor 4", image: "/sponsor4.png" },
     { name: "Sponsor 5", image: "/sponsor5.png" },
-    { name: "Sponsor 6", image: "/sponsor6.png" },
+    { name: "AJOPAW", image: "/sponsor6.png" },
     { name: "Sponsor 7", image: "/sponsor7.png" },
     { name: "Sponsor 8", image: "/sponsor8.PNG" },
     { name: "Sponsor 9", image: "/sponsor9.png" },
     { name: "Sponsor 10", image: "/sponsor10.jpg" },
-    { name: "AJOPAW", image: "/sponsor10.jpg" },
 ];
 
 const container: Variants = {
