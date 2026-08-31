@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 const sponsors = [
+    { name: "Petri", image: "/petritelogo.jpeg" },
     { name: "Sponsor 1", image: "/sponsor1.png" },
     { name: "Sponsor 2", image: "/sponsor2.png" },
     { name: "Sponsor 3", image: "/sponsor3.png" },
@@ -14,7 +15,7 @@ const sponsors = [
     { name: "Sponsor 8", image: "/sponsor8.PNG" },
     { name: "Sponsor 9", image: "/sponsor9.png" },
     { name: "Sponsor 10", image: "/sponsor10.jpg" },
-    { name: "Petri", image: "/petritelogo.jpeg" },
+    { name: "AJOPAW", image: "/sponsor10.jpg" },
 ];
 
 const container: Variants = {
