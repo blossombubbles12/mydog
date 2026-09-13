@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { WorldRecord } from "@/components/WorldRecord";
 import { CarnivalTimeline } from "@/components/CarnivalTimeline";
 import { CarnivalStats } from "@/components/CarnivalStats";
@@ -9,7 +9,7 @@ import { SafetyInfo } from "@/components/SafetyInfo";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, Users, Sparkles, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Users, Sparkles, ArrowRight, X } from "lucide-react";
 import { AnniversaryBanner } from "@/components/AnniversaryBanner";
 import { CldImage } from "@/components/media/CldImage";
 import { MediaAsset } from "@/components/media/GalleryGrid";
@@ -17,12 +17,20 @@ import { GalleryPreview } from "@/components/media/GalleryPreview";
 import { Sponsors } from "@/components/Sponsors";
 import { CarnivalHeroTitle } from "./CarnivalHeroTitle";
 import { PetParade } from "./PetParade";
+import { useState, useEffect } from "react";
 
 interface CarnivalClientProps {
     galleryMedia: MediaAsset[];
 }
 
 export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
+    const [showBanner, setShowBanner] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setShowBanner(true), 1500);
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className="flex flex-col min-h-screen">
             {/* Carnival Hero */}
@@ -296,6 +304,68 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
 
             {/* A Decade of Impact */}
             <AnniversaryBanner />
+
+            {/* Lagos Dog Carnival Banner Modal Popup */}
+            <AnimatePresence>
+                {showBanner && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 backdrop-blur-sm"
+                    >
+                        <motion.button
+                            onClick={() => setShowBanner(false)}
+                            className="absolute top-6 right-6 z-10 text-white/70 hover:text-white bg-black/50 rounded-full p-2 hover:bg-black/80 transition-all"
+                            aria-label="Close banner"
+                        >
+                            <X className="w-6 h-6" />
+                        </motion.button>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9, y: 50 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            exit={{ opacity: 0, scale: 0.9, y: 50 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            className="relative w-[90vw] max-w-5xl mx-4 md:mx-0"
+                        >
+                            <div className="relative w-full aspect-video overflow-hidden rounded-2xl shadow-2xl border-2 border-yellow-400/40">
+                                <Image
+                                    src="/lagosdogcarnivalbanner.jpeg"
+                                    alt="Lagos Dog Carnival"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                            </div>
+                            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                                <h2 className="text-2xl md:text-4xl font-black text-white drop-shadow-2xl uppercase mb-3">
+                                    Lagos Dog <span className="text-yellow-400">Carnival</span>
+                                </h2>
+                                <p className="text-base md:text-lg text-white/90 mb-6 font-medium">
+                                    Africa&apos;s Largest Pet Gathering — Dec 13th, 2026
+                                </p>
+                                <div className="flex flex-col sm:flex-row gap-4">
+                                    <Link href="/carnival/register">
+                                        <Button size="lg" className="text-lg px-8 py-4 rounded-full bg-yellow-500 text-black hover:bg-yellow-400 border-none shadow-xl font-black cursor-pointer">
+                                            Register Now
+                                        </Button>
+                                    </Link>
+                                    <Button
+                                        size="lg"
+                                        variant="outline"
+                                        className="text-lg px-8 py-4 rounded-full border-2 border-white text-white hover:bg-white hover:text-black font-black cursor-pointer"
+                                        onClick={() => setShowBanner(false)}
+                                    >
+                                        Maybe Later
+                                    </Button>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }
