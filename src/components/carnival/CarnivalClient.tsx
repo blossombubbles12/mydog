@@ -100,7 +100,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
             </div>
 
             {/* Lagos Dog Carnival Banner Section */}
-            <section className="relative w-full overflow-hidden bg-slate-900 py-16 md:py-24">
+            <section className="relative w-full overflow-hidden py-16 md:py-24">
                 <div className="container px-4">
                     <div className="relative w-full aspect-square max-w-lg mx-auto overflow-hidden rounded-2xl shadow-2xl border-2 border-yellow-400/30">
                         <Image
@@ -352,29 +352,14 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                                     className="object-cover"
                                     priority
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                             </div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                                <h2 className="text-2xl md:text-4xl font-black text-white drop-shadow-2xl uppercase mb-3">
-                                    Lagos Dog <span className="text-yellow-400">Carnival</span>
-                                </h2>
-                                <p className="text-base md:text-lg text-white/90 mb-6 font-medium">
-                                    Africa&apos;s Largest Pet Gathering — Dec 13th, 2026
-                                </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link href="/carnival/register">
                                         <Button size="lg" className="text-lg px-8 py-4 rounded-full bg-yellow-500 text-black hover:bg-yellow-400 border-none shadow-xl font-black cursor-pointer">
                                             Register Now
                                         </Button>
                                     </Link>
-                                    <Button
-                                        size="lg"
-                                        variant="outline"
-                                        className="text-lg px-8 py-4 rounded-full border-2 border-white text-white hover:bg-white hover:text-black font-black cursor-pointer"
-                                        onClick={() => setShowBanner(false)}
-                                    >
-                                        Maybe Later
-                                    </Button>
                                 </div>
                             </div>
                         </motion.div>
