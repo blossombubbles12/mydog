@@ -99,6 +99,21 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                 </div>
             </div>
 
+            {/* Lagos Dog Carnival Banner Section */}
+            <section className="relative w-full overflow-hidden bg-slate-900 py-16 md:py-24">
+                <div className="container px-4">
+                    <div className="relative w-full aspect-square max-w-lg mx-auto overflow-hidden rounded-2xl shadow-2xl border-2 border-yellow-400/30">
+                        <Image
+                            src="/lagosdogcarnivalbanner.jpeg"
+                            alt="Lagos Dog Carnival"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
+                    </div>
+                </div>
+            </section>
+
             {/* Stats */}
             <CarnivalStats />
 
@@ -327,9 +342,9 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.9, y: 50 }}
                             transition={{ duration: 0.6, ease: "easeOut" }}
-                            className="relative w-[90vw] max-w-5xl mx-4 md:mx-0"
+                            className="relative w-[90vw] max-w-lg mx-4 md:mx-0"
                         >
-                            <div className="relative w-full aspect-video overflow-hidden rounded-2xl shadow-2xl border-2 border-yellow-400/40">
+                            <div className="relative w-full aspect-square overflow-hidden rounded-2xl shadow-2xl border-2 border-yellow-400/40">
                                 <Image
                                     src="/lagosdogcarnivalbanner.jpeg"
                                     alt="Lagos Dog Carnival"
