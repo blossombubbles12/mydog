@@ -305,7 +305,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
             {/* A Decade of Impact */}
             <AnniversaryBanner />
 
-            {/* Sticky Drawer Banner */}
+            {/* Popup Banner */}
             <AnimatePresence>
                 {showBanner && (
                     <motion.div
@@ -313,73 +313,67 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed inset-0 z-[90] bg-black/40 backdrop-blur-sm"
-                        onClick={() => setShowBanner(false)}
+                        className="fixed inset-0 z-[90] flex items-center justify-center bg-black/85 backdrop-blur-sm"
                     >
-                        <motion.div
-                            initial={{ x: "100%" }}
-                            animate={{ x: 0 }}
-                            exit={{ x: "100%" }}
-                            transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                            className="fixed right-0 top-0 h-full w-80 bg-slate-950 shadow-2xl border-l border-yellow-400/20 overflow-y-auto"
-                            onClick={(e) => e.stopPropagation()}
+                        <motion.button
+                            onClick={() => setShowBanner(false)}
+                            className="absolute top-6 right-6 z-10 text-white/70 hover:text-white bg-black/50 rounded-full p-2 hover:bg-black/80 transition-all"
+                            aria-label="Close banner"
                         >
-                            <button
-                                onClick={() => setShowBanner(false)}
-                                className="absolute top-4 right-4 z-10 text-white/50 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-2 transition-all"
-                                aria-label="Close drawer"
-                            >
-                                <X className="w-5 h-5" />
-                            </button>
-                            <div className="p-6">
-                                <div className="relative w-full aspect-square rounded-xl overflow-hidden border border-yellow-400/20 mb-4">
-                                    <Image
-                                        src="/lagosdogcarnivalbanner.jpeg"
-                                        alt="Lagos Dog Carnival"
-                                        fill
-                                        className="object-cover"
-                                        priority
-                                    />
-                                </div>
-                                <p className="text-white/70 text-sm font-medium">
-                                    Africa's Largest Pet Gathering — Dec 13th, 2026
-                                </p>
+                            <X className="w-6 h-6" />
+                        </motion.button>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9, y: 50 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            exit={{ opacity: 0, scale: 0.9, y: 50 }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                            className="relative w-[90vw] max-w-lg mx-4"
+                        >
+                            <div className="relative w-full aspect-square overflow-hidden rounded-2xl shadow-2xl border-2 border-yellow-400/40">
+                                <Image
+                                    src="/lagosdogcarnivalbanner.jpeg"
+                                    alt="Lagos Dog Carnival"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
                             </div>
                         </motion.div>
                     </motion.div>
                 )}
             </AnimatePresence>
 
-            {/* Sticky Tab */}
-            <motion.div
-                className="fixed right-0 top-1/2 -translate-y-1/2 z-80 cursor-pointer group"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                animate={{ x: showBanner ? 320 : 0 }}
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                onClick={() => setShowBanner(!showBanner)}
-            >
-                <div className="bg-slate-950 border border-yellow-400/20 border-r-0 rounded-l-xl px-4 py-6 flex items-center justify-center gap-2 hover:bg-slate-900 transition-colors shadow-lg">
-                    <div className="relative">
-                        <Info className="w-5 h-5 text-yellow-400" />
-                        {!showBanner && (
-                            <motion.div
-                                className="absolute inset-0 rounded-full bg-yellow-400/20"
-                                animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
-                                transition={{ duration: 2, repeat: Infinity }}
-                            />
-                        )}
-                    </div>
-                    <motion.span
-                        className="text-white text-xs font-bold uppercase tracking-wider whitespace-nowrap"
-                        initial={{ opacity: 0, x: 10 }}
-                        animate={{ opacity: showBanner ? 0 : 1, x: showBanner ? 10 : 0 }}
-                        transition={{ duration: 0.3 }}
+            {/* Sticky Tab — appears when popup is dismissed */}
+            <AnimatePresence>
+                {!showBanner && (
+                    <motion.div
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                        className="fixed right-0 top-1/2 -translate-y-1/2 z-80 cursor-pointer"
+                        onClick={() => setShowBanner(true)}
                     >
-                        Event Info
-                    </motion.span>
-                </div>
-            </motion.div>
+                        <motion.div
+                            className="bg-slate-950 border border-yellow-400/20 border-r-0 rounded-l-xl px-4 py-6 flex items-center justify-center gap-2 hover:bg-slate-900 transition-colors shadow-lg"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <div className="relative">
+                                <Info className="w-5 h-5 text-yellow-400" />
+                                <motion.div
+                                    className="absolute inset-0 rounded-full bg-yellow-400/20"
+                                    animate={{ scale: [1, 1.8, 1], opacity: [0.5, 0, 0.5] }}
+                                    transition={{ duration: 2, repeat: Infinity }}
+                                />
+                            </div>
+                            <span className="text-white text-xs font-bold uppercase tracking-wider whitespace-nowrap">
+                                Event Info
+                            </span>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }
