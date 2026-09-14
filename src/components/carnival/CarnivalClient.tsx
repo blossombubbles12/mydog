@@ -362,8 +362,8 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         >
                             <div className="relative flex items-center justify-center">
                                 <Mascot
-                                    directions="/mascots/fox-directions.webp"
-                                    reactions="/mascots/fox-reactions.webp"
+                                    directions="/mascots/fox-directions.png"
+                                    reactions="/mascots/fox-reactions.png"
                                     size={40}
                                     label="Event Info"
                                 />
