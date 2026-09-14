@@ -9,7 +9,8 @@ import { SafetyInfo } from "@/components/SafetyInfo";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, Users, Sparkles, ArrowRight, X, Info } from "lucide-react";
+import { Calendar, MapPin, Users, Sparkles, ArrowRight, X } from "lucide-react";
+import { Mascot } from "page-mascot";
 import { AnniversaryBanner } from "@/components/AnniversaryBanner";
 import { CldImage } from "@/components/media/CldImage";
 import { MediaAsset } from "@/components/media/GalleryGrid";
@@ -359,8 +360,13 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <div className="relative">
-                                <Info className="w-5 h-5 text-yellow-400" />
+                            <div className="relative flex items-center justify-center">
+                                <Mascot
+                                    directions="/mascots/fox-directions.webp"
+                                    reactions="/mascots/fox-reactions.webp"
+                                    size={40}
+                                    label="Event Info"
+                                />
                                 <motion.div
                                     className="absolute inset-0 rounded-full bg-yellow-400/20"
                                     animate={{ scale: [1, 1.8, 1], opacity: [0.5, 0, 0.5] }}
