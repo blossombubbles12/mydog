@@ -353,7 +353,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         exit={{ opacity: 0, x: 100 }}
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         className="fixed right-0 top-1/2 -translate-y-1/2 z-80 cursor-pointer"
-                        onClick={() => setShowBanner(true)}
+                        onClick={() => setTimeout(() => setShowBanner(true), 400)}
                     >
                         <motion.div
                             whileHover={{ scale: 1.05 }}
@@ -363,7 +363,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                                 <Mascot
                                     directions="/mascots/fox-directions.webp"
                                     reactions="/mascots/fox-reactions.webp"
-                                    size={140}
+                                    size={120}
                                     label="Event Info"
                                 />
                                 <motion.div
