@@ -363,7 +363,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                                 <Mascot
                                     directions="/mascots/fox-directions.webp"
                                     reactions="/mascots/fox-reactions.webp"
-                                    size={90}
+                                    size={50}
                                     label="Event Info"
                                 />
                                 <motion.div
