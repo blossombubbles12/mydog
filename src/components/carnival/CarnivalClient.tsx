@@ -361,8 +361,8 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         >
                             <div className="relative">
                                 <Mascot
-                                    directions="/mascots/fox-directions.webp"
-                                    reactions="/mascots/fox-reactions.webp"
+                                    directions="/mascots/pug-directions.webp"
+                                    reactions="/mascots/pug-reactions.webp"
                                     size={50}
                                     label="Event Info"
                                 />
