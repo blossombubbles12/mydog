@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
       bodySizeLimit: '20mb',
     },
   },
+  transpilePackages: ["page-mascot"],
 };
 
 export default nextConfig;
