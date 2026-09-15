@@ -359,7 +359,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <div className="relative">
+                            <div className="relative" onClick={(e) => e.stopPropagation()}>
                                 <Mascot
                                     directions="/mascots/fox-directions.webp"
                                     reactions="/mascots/fox-reactions.webp"
