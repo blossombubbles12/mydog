@@ -6,8 +6,8 @@ export function MascotWrapper() {
   return (
     <div className="pointer-events-auto">
       <Mascot
-        directions="/mascots/fox-directions.png"
-        reactions="/mascots/fox-reactions.png"
+        directions="/mascots/fox-directions.webp"
+        reactions="/mascots/fox-reactions.webp"
         size={140}
         label="Interactive page mascot"
       />
