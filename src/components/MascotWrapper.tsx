@@ -8,7 +8,7 @@ export function MascotWrapper() {
       <Mascot
         directions="/mascots/fox-directions.webp"
         reactions="/mascots/fox-reactions.webp"
-        size={140}
+        size={120}
         label="Interactive page mascot"
       />
     </div>
