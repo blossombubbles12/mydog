@@ -356,11 +356,10 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         onClick={() => setShowBanner(true)}
                     >
                         <motion.div
-                            className="bg-slate-950 border border-yellow-400/20 border-r-0 rounded-l-xl px-4 py-6 flex items-center justify-center gap-2 hover:bg-slate-900 transition-colors shadow-lg"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <div className="relative flex items-center justify-center">
+                            <div className="relative">
                                 <Mascot
                                     directions="/mascots/fox-directions.webp"
                                     reactions="/mascots/fox-reactions.webp"
@@ -373,9 +372,6 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                                     transition={{ duration: 2, repeat: Infinity }}
                                 />
                             </div>
-                            <span className="text-white text-xs font-bold uppercase tracking-wider whitespace-nowrap">
-                                Event Info
-                            </span>
                         </motion.div>
                     </motion.div>
                 )}

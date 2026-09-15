@@ -6,7 +6,6 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { MainWrapper } from "@/components/MainWrapper";
 import { Toaster } from "@/components/ui/toaster";
-import { MascotWrapper } from "@/components/MascotWrapper";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -49,11 +48,6 @@ export default function RootLayout({
         </MainWrapper>
         <Footer />
         <Toaster />
-        <div className="pointer-events-none fixed bottom-4 right-4 z-50">
-          <div className="pointer-events-auto">
-            <MascotWrapper />
-          </div>
-        </div>
       </body>
     </html>
   );
