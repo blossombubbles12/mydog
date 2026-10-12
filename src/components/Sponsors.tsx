@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 const sponsors = [
+    { name: "Sponsor 11", image: "/sponsor11.png" },
     { name: "Petri", image: "/petritelogo.jpeg" },
     { name: "Sponsor 1", image: "/sponsor1.png" },
     { name: "Sponsor 2", image: "/sponsor2.png" },
