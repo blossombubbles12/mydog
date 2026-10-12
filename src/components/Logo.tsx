@@ -18,7 +18,7 @@ export function Logo({ className, showText = false }: LogoProps) {
             <div className="relative w-14 h-14 flex items-center justify-center">
                 {!imgError ? (
                     <Image
-                        src="/mydoglogo.png"
+                        src="/logo.png"
                         alt="My Dog & I Logo"
                         width={60}
                         height={60}
