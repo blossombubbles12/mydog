@@ -15,13 +15,13 @@ export function Logo({ className, showText = false }: LogoProps) {
 
     return (
         <div className={cn("flex items-center gap-2", className)}>
-            <div className="relative w-14 h-14 flex items-center justify-center">
+            <div className="relative w-20 h-20 flex items-center justify-center">
                 {!imgError ? (
                     <Image
-                        src="/logo.png"
-                        alt="My Dog & I Logo"
-                        width={60}
-                        height={60}
+                        src="/annisversary logo.png"
+                        alt="My Dog & I Anniversary Logo"
+                        width={80}
+                        height={80}
                         className="object-contain"
                         priority
                         onError={() => setImgError(true)}
