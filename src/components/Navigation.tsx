@@ -36,31 +36,31 @@ export function Navigation() {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
             <TopPromotionBanner />
-            <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+            <div className="container mx-auto px-4 md:px-6 h-12 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center">
-                    <Logo />
+                    <Logo className="w-10 h-10" />
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center space-x-8">
+                <nav className="hidden md:flex items-center space-x-3">
                     {navItems.map((item) => (
                         <Link
                             key={item.name}
                             href={item.href}
                             className={cn(
-                                "text-sm font-medium transition-colors hover:text-primary relative group flex items-center gap-1.5",
+                                "text-xs font-medium transition-colors hover:text-primary relative flex items-center gap-1",
                                 pathname === item.href
                                     ? "text-primary font-semibold"
                                     : "text-muted-foreground"
                             )}
                         >
-                            {item.icon && <item.icon className={cn("w-4 h-4", pathname === item.href ? "text-primary" : "text-muted-foreground group-hover:text-primary")} />}
+                            {item.icon && <item.icon className={cn("w-3 h-3", pathname === item.href ? "text-primary" : "text-muted-foreground group-hover:text-primary")} />}
                             {item.name}
                             {pathname === item.href && (
                                 <motion.div
                                     layoutId="underline"
-                                    className="absolute left-0 right-0 -bottom-1 h-0.5 bg-primary"
+                                    className="absolute left-0 right-0 -bottom-0.5 h-0.5 bg-primary"
                                 />
                             )}
                         </Link>
@@ -81,11 +81,11 @@ export function Navigation() {
                 {/* Mobile Controls */}
                 <div className="flex items-center md:hidden">
                     <button
-                        className="p-2 text-foreground bg-secondary/20 rounded-full"
+                        className="p-1.5 text-foreground bg-secondary/20 rounded-full"
                         onClick={toggleMenu}
                         aria-label="Toggle menu"
                     >
-                        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
                     </button>
                 </div>
             </div>
@@ -115,14 +115,14 @@ export function Navigation() {
                                 </Link>
                             ))}
 
-                            <div className="flex flex-col gap-3 pt-4 pb-2">
+                            <div className="flex flex-col gap-2 pt-4 pb-2">
                                 <Link href="/carnival/register" onClick={() => setIsOpen(false)}>
-                                    <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-black text-lg h-14 rounded-2xl border-none shadow-lg">
+                                    <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-medium text-sm h-10 rounded-md border-none shadow-sm">
                                         Register for Carnival
                                     </Button>
                                 </Link>
                                 <Link href="https://chat.whatsapp.com/C0I2KfbQrpf4Qw5qc8QEDT" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
-                                    <Button className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-black text-lg h-14 rounded-2xl border-none shadow-lg" size="lg">
+                                    <Button className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-medium text-sm h-10 rounded-md border-none shadow-sm" size="lg">
                                         Join WhatsApp Community
                                     </Button>
                                 </Link>
