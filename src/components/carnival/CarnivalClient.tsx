@@ -352,8 +352,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: 100 }}
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                        className="fixed right-0 top-1/2 -translate-y-1/2 z-80 cursor-pointer"
-                        onClick={() => setTimeout(() => setShowBanner(true), 400)}
+                        className="fixed right-0 top-1/2 -translate-y-1/2 z-80"
                     >
                         <motion.div
                             whileHover={{ scale: 1.05 }}
