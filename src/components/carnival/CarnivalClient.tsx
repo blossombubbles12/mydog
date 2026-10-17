@@ -20,6 +20,16 @@ import { CarnivalHeroTitle } from "./CarnivalHeroTitle";
 import { PetParade } from "./PetParade";
 import { useState, useEffect } from "react";
 
+const POPUP_KEY = "carnival_popup_last_seen";
+const POPUP_INTERVAL = 24 * 60 * 60 * 1000;
+
+function shouldShowPopup(): boolean {
+    if (typeof window === "undefined") return false;
+    const lastSeen = localStorage.getItem(POPUP_KEY);
+    if (!lastSeen) return true;
+    return Date.now() - Number(lastSeen) > POPUP_INTERVAL;
+}
+
 interface CarnivalClientProps {
     galleryMedia: MediaAsset[];
 }
@@ -28,9 +38,16 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
     const [showBanner, setShowBanner] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => setShowBanner(true), 1500);
-        return () => clearTimeout(timer);
+        if (shouldShowPopup()) {
+            const timer = setTimeout(() => setShowBanner(true), 1500);
+            return () => clearTimeout(timer);
+        }
     }, []);
+
+    const closeBanner = () => {
+        localStorage.setItem(POPUP_KEY, String(Date.now()));
+        setShowBanner(false);
+    };
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -306,7 +323,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
             {/* A Decade of Impact */}
             <AnniversaryBanner />
 
-            {/* Popup Banner */}
+            {/* Popup Banner — shows once per 24h */}
             <AnimatePresence>
                 {showBanner && (
                     <motion.div
@@ -317,7 +334,7 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         className="fixed inset-0 z-[90] flex items-center justify-center bg-black/85 backdrop-blur-sm"
                     >
                         <motion.button
-                            onClick={() => setShowBanner(false)}
+                            onClick={closeBanner}
                             className="absolute top-6 right-6 z-10 text-white/70 hover:text-white bg-black/50 rounded-full p-2 hover:bg-black/80 transition-all"
                             aria-label="Close banner"
                         >
@@ -344,28 +361,18 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                 )}
             </AnimatePresence>
 
-            {/* Sticky Tab — appears when popup is dismissed */}
-            <AnimatePresence>
-                {!showBanner && (
-                    <motion.div
-                        initial={{ opacity: 0, x: 100 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: 100 }}
-                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                        className="fixed right-0 top-1/2 -translate-y-1/2 z-80"
-                    >
-                        <div className="relative">
-                            <Mascot
-                                directions="/mascots/pug-directions.webp"
-                                reactions="/mascots/pug-reactions.webp"
-                                size={50}
-                                label="Event Info"
-                            />
-                            <div className="absolute inset-0 rounded-full bg-yellow-400/20 pointer-events-none animate-ping" />
-                        </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+            {/* Sticky Mascot Tab */}
+            <div className="fixed right-0 top-1/2 -translate-y-1/2 z-80">
+                <div className="relative">
+                    <Mascot
+                        directions="/mascots/pug-directions.webp"
+                        reactions="/mascots/pug-reactions.webp"
+                        size={50}
+                        label="Event Info"
+                    />
+                    <div className="absolute inset-0 rounded-full bg-yellow-400/20 pointer-events-none animate-ping" />
+                </div>
+            </div>
         </div>
     );
 }
