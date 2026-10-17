@@ -354,24 +354,15 @@ export function CarnivalClient({ galleryMedia }: CarnivalClientProps) {
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         className="fixed right-0 top-1/2 -translate-y-1/2 z-80"
                     >
-                        <motion.div
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            <div className="relative">
-                                <Mascot
-                                    directions="/mascots/pug-directions.webp"
-                                    reactions="/mascots/pug-reactions.webp"
-                                    size={50}
-                                    label="Event Info"
-                                />
-                                <motion.div
-                                    className="absolute inset-0 rounded-full bg-yellow-400/20"
-                                    animate={{ scale: [1, 1.8, 1], opacity: [0.5, 0, 0.5] }}
-                                    transition={{ duration: 2, repeat: Infinity }}
-                                />
-                            </div>
-                        </motion.div>
+                        <div className="relative">
+                            <Mascot
+                                directions="/mascots/pug-directions.webp"
+                                reactions="/mascots/pug-reactions.webp"
+                                size={50}
+                                label="Event Info"
+                            />
+                            <div className="absolute inset-0 rounded-full bg-yellow-400/20 pointer-events-none animate-ping" />
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
